@@ -1,0 +1,74 @@
+.menu{
+    height: 200px;
+    width: 100%;
+    border: solid 1px red;
+    position: relative;
+}
+
+.bg-sm{
+    background-color: darkslategray;
+    background-image: url('../../assets/img/header-interno-3.png'); 
+    background-position: center center;
+}
+
+.navbar-toggler{
+    float:right;
+}
+
+.sub-menu{
+    color: #fff;
+    font-size: 15pt;
+    position: absolute;
+    right: 8%;
+    text-align: right;
+}
+
+.sub-menu a{
+    text-decoration: none;
+    color: #fff;
+    cursor: hand;
+    margin: 3px;
+ }
+
+.sub-menu a:visited{
+    color: #fff;
+ }
+
+.sub-menu a i{
+    padding: 2px;
+ }
+
+.sub-menu a:active{
+    padding: 2px;
+    font-weight: bold;
+ }
+
+ .social{
+     margin: 5px;
+ }
+
+.languaje{
+     padding-right: 5px;
+     font-size: 12pt!important ;
+}
+
+.bold{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.login{
+    text-transform: uppercase;
+    font-size: 10pt;
+    margin: 5px;
+}
+
+.contact{
+    font-size: 10pt;
+    margin-right: 10px;
+}
+.border-r{
+ border-right: solid 3px #fff;
+ padding-right: 5px;
+}
+

@@ -1,0 +1,46 @@
+  
+.title{
+
+	width: 100%;
+	text-align: center;
+	padding-bottom: 50px;
+	line-height: 1;
+	margin-bottom: 15px;
+	margin-top: 50px;
+}
+
+.title h5{
+  color: #87bb43;
+  line-height: 0;
+  font-size: 12pt;
+}
+
+.rule::before{
+    content: "";
+    position: absolute;
+    width: 6%;
+    height: 60px;
+    border-bottom: 3px solid #87bb43;
+    left: 47%;
+   }
+
+   .green-text {
+    color: #87bb43;
+    padding-bottom: 50px;
+   }
+   
+   .italic{
+    font-style: italic;
+   }
+
+   .about-us p.green-text{
+       width: 40%;
+       margin:10px auto;
+       text-align: center;
+   }
+
+   .about-us p{
+    width: 100%;
+    margin:10px auto;
+    text-align: center;
+}

@@ -204,10 +204,10 @@
 .rule::before{
  content: "";
  position: absolute;
- width: 10%;
- height: 49px;
- border-bottom: 2px solid #4dcb0b;
- left: 45%;
+ width: 6%;
+ height: 60px;
+ border-bottom: 3px solid #4dcb0b;
+ left: 47%;
 }
 
 /*******************************FOOTER************************/

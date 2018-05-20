@@ -8,23 +8,6 @@
 
 /**************DEALS*************************************************************/
 
-
-.title{
-
-	width: 100%;
-	text-align: center;
-	padding-bottom: 50px;
-	line-height: 1;
-	margin-bottom: 15px;
-	margin-top: 50px;
-}
-
-.title h5{
-  color: #4dcb0b;
-  line-height: 0;
-  font-size: 12pt;
-}
-
 .contenedor-gris{
 	background-color: #f3f3f3b3;
 	padding: 30px;
@@ -201,14 +184,7 @@
     margin-top: -30px;
 }
 
-.rule::before{
- content: "";
- position: absolute;
- width: 6%;
- height: 60px;
- border-bottom: 3px solid #87bb43;
- left: 47%;
-}
+
 
 
 

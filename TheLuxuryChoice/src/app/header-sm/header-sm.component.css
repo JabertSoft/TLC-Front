@@ -1,74 +1,164 @@
-.menu{
-    height: 200px;
+header{
     width: 100%;
-    border: solid 1px red;
-    position: relative;
+    background-color: rgb(31, 41, 41);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/img/header-interno-3.png'); 
 }
 
 .bg-sm{
-    background-color: darkslategray;
-    background-image: url('../../assets/img/header-interno-3.png'); 
-    background-position: center center;
+    background:  rgba(31, 41, 41, 0.3);
+    display: flex;
+    flex-direction: row;
+    padding: 0 7%;
+    width: 100%;
 }
 
-.navbar-toggler{
-    float:right;
+
+.left-side{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    width: 50%;
 }
 
-.sub-menu{
-    color: #fff;
-    font-size: 15pt;
-    position: absolute;
-    right: 8%;
+.right-side{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+    width: 50%;
+ }
+
+ .col-container{
+     display: flex;
+     flex-direction: column;
+ }
+
+ .col-container a{
+    display: inline;
+}
+
+.col-container img{
+    margin-right: 10%;
+}
+
+
+ul#search-menu li {
+    display:inline;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+ul#search-menu li:hover {
+    border-top: solid 2px #fff;
+}
+
+ul#search-menu li a {
+    color:#fff;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+/*****************************************
+                BUTTON MENU
+*******************************************/
+.menu-button {
+    display: inline-block;
+    cursor: pointer;
+    align-self: center;
+}
+
+.left-side .menu-button{
+    display: none;
+}
+
+.menu-button:hover {
+    cursor: hand;
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+
+/*******************************************
+                  CONTACTO
+********************************************/
+
+.contact{
+    align-self: center;
+    padding-right: 10px;
     text-align: right;
 }
 
-.sub-menu a{
-    text-decoration: none;
-    color: #fff;
-    cursor: hand;
-    margin: 3px;
- }
-
-.sub-menu a:visited{
-    color: #fff;
- }
-
-.sub-menu a i{
-    padding: 2px;
- }
-
-.sub-menu a:active{
-    padding: 2px;
-    font-weight: bold;
- }
-
- .social{
-     margin: 5px;
- }
-
-.languaje{
-     padding-right: 5px;
-     font-size: 12pt!important ;
-}
-
-.bold{
-    font-weight: bold;
-    font-style: normal;
-}
-
-.login{
-    text-transform: uppercase;
-    font-size: 10pt;
+.contact a {
     margin: 5px;
+    color:#fff;
 }
 
-.contact{
-    font-size: 10pt;
-    margin-right: 10px;
-}
-.border-r{
- border-right: solid 3px #fff;
- padding-right: 5px;
+.contact .languaje{
+    font-size: 0.8em;
+    background: transparent;
+    color:#fff;
+    border: none;
+    padding-right:5px; 
 }
 
+
+ul#login-menu li {
+    display:inline;
+}
+
+ul#login-menu li a {
+    color:#fff;
+    font-size: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.tel {
+    color:#fff;
+    font-size: 0.8em;
+    padding-right: 5px;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+/*******************************************
+                  MEDIA
+********************************************/
+@media only screen and (max-width: 768px) {
+    .left-side {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .right-side{
+        display: none;
+    }
+
+    .left-side .menu-button{
+        display: inline-block;
+    }
+}

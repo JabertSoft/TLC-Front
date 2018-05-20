@@ -5,11 +5,13 @@ import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { AboutComponent } from './about/about.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 const appRoutes: Routes = [
         {path:'', component:HomeComponent},
         {path:'home', component:HomeComponent},
         {path:'about', component:AboutComponent},
+        {path:'signup', component:SignUpComponent},
         {path:'**', component:ErrorComponent},
 ];
 

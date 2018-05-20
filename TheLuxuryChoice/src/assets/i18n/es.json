@@ -1,0 +1,13 @@
+ {
+    "sign-in": {
+        "title": "Crear una cuenta",
+        "subtitle": "Registro de usuario",
+        "userName":"Usuario",
+        "password":"Contraseña",
+        "email":"E-mail",
+        "firstName":"Nombre",
+        "lastName":"Apellido",
+        "terms":"* al crear una cuenta aceptas nuestra política de seguridad ",
+        "send":"Crear cuenta"
+    }
+}

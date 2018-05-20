@@ -1,0 +1,75 @@
+.form-container{
+   width: 100%;
+}
+
+p {
+    font-size: 2em!important;
+}
+
+.form-container form{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.form-container form div{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.field{
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: #d5d9dc;
+    margin: 5px auto;
+    box-shadow: none;
+    border: none;
+    margin-top: -5px;
+}
+
+.label{
+    padding: 0;
+    width: 30%;
+    margin: 5px auto;
+}
+
+.btn-send{
+    width: 15%;
+    padding: 10px;
+    background-color: #87bb43;
+    border-radius: 5px;
+    color:#fff;
+    margin: 0 auto;
+}
+
+.terms{
+    margin: 20px auto;
+    
+}
+
+
+
+/*******************************************
+                  MEDIA
+********************************************/
+@media only screen and (max-width: 768px) {
+    .field{
+        padding: 10px;
+        width: 90%;
+    }
+    
+    .label{
+        padding: 0;
+        width: 90%;
+    }
+    
+    .btn-send{
+        width: 60%;
+        margin: 0 auto;
+    }
+}

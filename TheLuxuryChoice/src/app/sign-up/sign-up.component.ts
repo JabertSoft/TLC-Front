@@ -16,7 +16,7 @@ import { AppComponent } from '../app.component';
 export class SignUpComponent implements OnInit {
   user:User;
   
-  constructor(){
+  constructor(@Inject(forwardRef(() => AppComponent)) private appComponent:AppComponent){
     this.user = new User;
   }
   

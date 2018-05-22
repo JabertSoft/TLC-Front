@@ -4,34 +4,34 @@
     <div class="row">
         <div class="title rule">	
             <h5>LUXURY GREEN TRIPS</h5>
-            <h2 [translate]="'sign-in.title'"></h2> 
+            <h2 [translate]="'sign-up.title'"></h2> 
         </div>
     </div>
-    <p [translate]="'sign-in.subtitle'"></p>
+    <p [translate]="'sign-up.subtitle'"></p>
     <div class="underline">
     </div>
     <div class="form-container">
         <form #userRegistrationForm="ngForm">
           <div>
            
-                <label [translate]="'sign-in.userName'" class="label"></label>
+                <label [translate]="'sign-up.userName'" class="label"></label>
                 <input class="field" type="text" name="userName" #userName="ngModel" [(ngModel)]="user.UserName" required>
             
-                <label [translate]="'sign-in.password'" class="label"></label>
+                <label [translate]="'sign-up.password'" class="label"></label>
                 <input class="field" type="password" name="password" #password="ngModel" [(ngModel)]="user.Password" required>
                 
-                <span class="label" [translate]="'sign-in.email'"></span>
-                <input class="field" type="text" name="Email" #email="ngModel" [(ngModel)]="user.Email" required>
+                <span class="label" [translate]="'sign-up.email'"></span>
+                <input class="field" type="email" name="Email" #email="ngModel" [(ngModel)]="user.Email" required>
             
-                <span class="label" [translate]="'sign-in.firstName'"></span>
+                <span class="label" [translate]="'sign-up.firstName'"></span>
                 <input class="field" type="text" name="FirstName" #firstName="ngModel" [(ngModel)]="user.FirstName">
             
-                <span class="label" [translate]="'sign-in.lastName'"></span>
+                <span class="label" [translate]="'sign-up.lastName'"></span>
                 <input class="field" type="text" name="LastName" #lastName="ngModel" [(ngModel)]="user.LastName">
                 
-                <span class="terms" [translate]="'sign-in.terms'"> politica</span> 
+                <span class="terms" [translate]="'sign-up.terms'"> politica</span> 
                 
-                <input class="btn-send" type="submit" [value]="'sign-in.send' | translate">
+                <input class="btn-send" type="submit" [value]="'sign-up.send' | translate">
           </div>
         </form>
     </div>

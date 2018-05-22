@@ -11,17 +11,18 @@ declare var jQuery:any;
 })
 export class HeaderSmComponent implements OnInit {
 
-  constructor(@Inject(forwardRef(() => AppComponent)) private main:AppComponent) { 
+  constructor(@Inject(forwardRef(() => AppComponent)) private appComponent:AppComponent) { 
     
   }
-  changeLanguage(language?:string){
-    this.main.changeLanguage(language);
+  changeLanguage(language:string){
+    this.appComponent.changeLanguage(language);
   }
 
 
   ngOnInit() {
-  }
-
+  
+  } 
+  
   menu_click(){
       $(".menu-button").toggleClass("change");
   }

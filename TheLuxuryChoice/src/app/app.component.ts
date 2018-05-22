@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +10,28 @@ import {TranslateService} from '@ngx-translate/core';
 export class AppComponent {
   title = 'app';
     
-  constructor(private translate:TranslateService){
-    translate.addLangs(["en","es"]);  
-    translate.setDefaultLang('es');
-    let browserlang = translate.getBrowserLang();
-    translate.use(browserlang.match(/en|es/) ? browserlang : "es");
+  constructor(private translate:TranslateService, private cookieService:CookieService ){
+    translate.addLangs(["en","es"]); 
+    
+    if(localStorage.getItem('language')){
+      translate.setDefaultLang(localStorage.getItem('language'));
+      translate.use(localStorage.getItem('language'));
+    }
+    else {
+       let browserlang = this.translate.getBrowserLang();
+       let lang = (browserlang.match(/en|es/) ? browserlang : "es");
+       this.translate.use(lang);
+       translate.setDefaultLang(lang);
+       localStorage.setItem("language",lang);
+       
+    }
   }
 
-  public changeLanguage(language?:string){
+  public changeLanguage(language:string){
     this.translate.use(language);
+    localStorage.setItem("language",language);
+    
   }
+
 }
+

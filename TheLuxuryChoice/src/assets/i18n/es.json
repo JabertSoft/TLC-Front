@@ -1,5 +1,13 @@
  {
-    "sign-in": {
+    "header-sm":{
+        "sign-in":"ingresar",
+        "sign-up":"registrarse",
+        "flights":"Vuelos",
+        "packages":"Paquetes",
+        "hotels":"Hoteles",
+        "activities":"Actividades"    
+    },
+    "sign-up": {
         "title": "Crear una cuenta",
         "subtitle": "Registro de usuario",
         "userName":"Usuario",

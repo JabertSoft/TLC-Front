@@ -15,7 +15,7 @@
         "email":"E-mail",
         "firstName":"Nombre",
         "lastName":"Apellido",
-        "terms":"* al crear una cuenta aceptas nuestra política de seguridad ",
+        "terms":"* Al crear una cuenta estás aceptando nuestras políticas de seguridad.",
         "send":"Crear cuenta"
     }
 }

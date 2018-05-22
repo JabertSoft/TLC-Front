@@ -15,6 +15,7 @@
         "email":"E-mail",
         "firstName":"First Name",
         "lastName":"Last Name",
+        "terms":"* When you hit 'Create Account' you are accepting our security policies.",
         "send":"Create Account"
     }
 }

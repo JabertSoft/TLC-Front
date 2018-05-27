@@ -22,6 +22,7 @@ import { SearchHotelComponent } from './home/search-hotel/search-hotel.component
 import { SearchFligthComponent } from './home/search-fligth/search-fligth.component';
 import { SearchPackagesComponent } from './home/search-packages/search-packages.component';
 import { SearchActivitiesComponent } from './home/search-activities/search-activities.component';
+import { ActivityResultsComponent } from './home/activity-results/activity-results.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { SearchActivitiesComponent } from './home/search-activities/search-activ
     SearchHotelComponent,
     SearchFligthComponent,
     SearchPackagesComponent,
-    SearchActivitiesComponent
+    SearchActivitiesComponent,
+    ActivityResultsComponent
   ],
   imports: [
     BrowserModule,

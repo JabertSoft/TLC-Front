@@ -1,0 +1,128 @@
+<header>
+  <div class="bg-sm">
+    <div class="left-side">
+      <div class="col-container">
+        <img src="../../assets/img/titulo.png" class="img-fluid" alt="">
+
+        <ul id="search-menu">
+          <li>
+            <a href="">{{'header-sm.hotels' | translate}}</a>
+          </li>
+          <li>
+            <a href="">{{'header-sm.flights' | translate}}</a>
+          </li>
+          <li>
+            <a href="">{{'header-sm.packages' | translate}}</a>
+          </li>
+          <li>
+            <a href="">{{'header-sm.activities' | translate}}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-button" (click)="menu_click()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+    </div>
+    <div class="right-side">
+      <div class="contact">
+        <div class="social">
+          <a href="https://facebook.com">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://youtube.com">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <button (click)="changeLanguage('es')" class="languaje">ESP</button>
+          <button (click)="changeLanguage('en')" class="languaje">ENG</button>
+        </div>
+        <div class="login">
+          <ul id="login-menu">
+            <li>
+              <a href="/signup">{{'header-sm.sign-up' | translate}}</a>
+            </li>
+            <li>
+              <a href="">{{'header-sm.sign-in' | translate}}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tel">
+          0800-111-2345
+        </div>
+      </div>
+
+
+      <div class="menu-button" (click)="menu_click()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </div>
+  <div class="search-bar">
+    <select>
+      <option value="Lanzarote"></option>
+    </select>
+    <a>Buscar
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+</header>
+
+<div class="founded-activities">
+  <div class="activity-filters">
+    <div class="float-left">10 actividades encontradas</div>
+    <div class="float-right">ORDERNAR POR
+      <select>
+        <option value="menor precio"></option>
+      </select>
+    </div>
+  </div>
+  <hr class="underline" />
+  <div>
+    <div class="activity-item">
+      <div class="activity-image">
+      </div>
+      <div class="activity-description">
+        <div class="activity-data">
+          <p>
+            <span class="badge badge-success">9</span>
+            <span class="text-success">Muy bueno</span>
+            <span>12 comentarios</span>
+          </p>
+          <p>
+            <span class="fa fa-map-marker text text-danger"></span>
+            <a>Maspalomas</a>
+            <span>, a 450 metros del centro</span>
+          </p>
+          <h2 class="font-weight-bold">Safari en jeep</h2>
+          <p class="font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nihil aliquam expedita in eligendi, debitis
+            saepe quis quos id facilis commodi, corporis maxime, doloremque architecto.</p>
+          <p class="text-danger font-italic">10 compradas la ultima semana</p>
+          <p class="text-success font-italic">No olvides contratar tu servicio de Asistencia al viajero!</p>
+        </div>
+        <div class="activity-price">
+          <p>Precio por persona</p>
+          <p>
+            <strong>U$D</strong>
+            <span>52,90*</span>
+          </p>
+          <input type="text" value="Ver detalle" class="btn-send">
+          <!-- <a href="" class="btn-send" >Ver detalle</a> -->
+          <p>
+            <a href="">Ver Bancos y Tarjetas</a>
+          </p>  
+          <i class="fa fa-heart text-danger"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

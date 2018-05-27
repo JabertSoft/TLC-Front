@@ -53,6 +53,16 @@ button{cursor: hand;}
    }
 
 
+   .btn-send{
+    padding: 10px;
+    background-color: #87bb43;
+    border-radius: 5px;
+    color:#fff;
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
 
 
 /*******************************************

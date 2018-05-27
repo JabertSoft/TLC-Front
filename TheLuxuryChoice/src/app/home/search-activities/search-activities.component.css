@@ -3,7 +3,7 @@ header{
     background-color: rgb(31, 41, 41);
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url('../../assets/img/header-interno-1.png'); 
+    background-image: url('../../../assets/img/header-interno-1.png'); 
 }
 
 .bg-sm{

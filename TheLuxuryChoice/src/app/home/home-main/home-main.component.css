@@ -207,22 +207,22 @@
 
 
 .paquete1{
-	background:url('../../assets/img/paquete-1.png') center center;
+	background:url('../../../assets/img/paquete-1.png') center center;
 	background-position: cover;
 	background-repeat: no-repeat;
 }
 .paquete2{
-	background:url('../../assets/img/paquete-2.png') center center;
+	background:url('../../../assets/img/paquete-2.png') center center;
 	background-position: cover;
 	background-repeat: no-repeat;
 }
 .paquete3{
-	background:url('../../assets/img/paquete-3.png') center center;
+	background:url('../../../assets/img/paquete-3.png') center center;
 	background-position: cover;
 	background-repeat: no-repeat;
 }
 .paquete4{
-	background:url('../../assets/img/paquete-4.png') center center;
+	background:url('../../../assets/img/paquete-4.png') center center;
 	background-position: cover;
 	background-repeat: no-repeat;
 }

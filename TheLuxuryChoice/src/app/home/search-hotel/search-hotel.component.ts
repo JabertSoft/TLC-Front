@@ -1,15 +1,14 @@
-import { Component, OnInit, forwardRef, Inject } from '@angular/core';
-import { AppComponent } from '../app.component';
-
+import { Component, OnInit, Inject, forwardRef } from '@angular/core';
+import { AppComponent } from '../../app.component';
 declare var $:any;
 declare var jQuery:any;
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-search-hotel',
+  templateUrl: './search-hotel.component.html',
+  styleUrls: ['./search-hotel.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class SearchHotelComponent implements OnInit {
 
   constructor(@Inject(forwardRef(() => AppComponent)) private main:AppComponent) { 
     
@@ -25,5 +24,6 @@ export class HeaderComponent implements OnInit {
   menu_click(){
       $(".menu-button").toggleClass("change");
   }
+
 
 }

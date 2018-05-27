@@ -47,13 +47,48 @@
 .to-right{
     right:-10%;
     text-align: right;
-    padding-right: 5px;
+    padding-right: 0px;
 }
 
 .gray-container{
     padding: 0 5%;
     background-color: blue;
 }
+
+
+.card-title, .card-hotel{
+    font-size: 1.5em;
+    line-height: 0.8;
+    margin-right:10px; 
+}
+.card-description{
+    margin-right: 10px;
+}
+
+.card-fecha{
+    color: #4dcb0b;
+    margin-right:10px;
+}
+
+.buttons-cont i{
+    text-align: center;
+    padding: auto;
+    font-size: 2em;
+}
+
+.buttons-cont button{
+    background: transparent;
+    border: none;
+    padding: 7px;
+    height: 40px;
+    width:40px;
+}
+
+.buttons-cont .green-btn{
+    background: #4dcb0b;
+    color:white!important;
+}
+
 
 
 @media only screen and (max-width: 768px) {

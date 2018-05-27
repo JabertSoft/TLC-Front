@@ -1,0 +1,35 @@
+<div class="container gray-container">
+
+  <div class="sale-container right-photo" *ngFor="let sale of sales">
+    <div class="left-panel">
+        <div class="card to-right">
+              <span class="card-title">{{sale.title}}</span>
+							<span class="card-hotel">{{sale.subtitle}}</span>
+							<span class="card-fecha">{{'deals.from' | translate}} {{sale.from | date:'mediumDate'}}  {{'deals.to' | translate}} {{sale.to | date:'mediumDate'}} </span>
+							<p class="card-description">{{sale.description}}</p>
+							<div class="buttons-cont">
+                <button><i class="fa fa-share"></i></button>
+                <button><i class="fa fa-thumbtack" aria-hidden="true"></i></button>
+								<button class="green-btn"><i class="fa fa-plus button-plus"></i></button>
+					    </div>
+        </div>
+    </div>
+    <div class="right-panel" [ngStyle]="{'background-img': sale.imgUrl}">
+        
+    </div>
+  </div>
+
+  <div class="sale-container left-photo">
+    <div class="left-panel">
+        PHOTO
+    </div>
+    <div class="right-panel">
+        
+        <div class="card to-left">
+          TEXT
+        </div>
+    </div>
+  </div>
+
+</div>
+

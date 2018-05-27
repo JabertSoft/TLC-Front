@@ -13,6 +13,9 @@ body{
     margin: 0 auto;
 }
 
+button:focus {outline:0;}
+button{cursor: hand;}
+
 .block{display: block}
 .inline-block{display: inline-block;}
 

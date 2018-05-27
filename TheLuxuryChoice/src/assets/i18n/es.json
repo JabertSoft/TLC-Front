@@ -17,5 +17,10 @@
         "lastName":"Apellido",
         "terms":"* Al crear una cuenta estás aceptando nuestras políticas de seguridad.",
         "send":"Crear cuenta"
+    },
+    "deals":{
+        "from":"Desde el ",
+        "to":"hasta el "
     }
+
 }

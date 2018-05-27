@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { travel_package } from '../models/packages.model';
-
+import { travel_package } from '../..//models/packages.model';
+declare let $:any;
+declare let jQuery:any;
 
 @Component({
   selector: 'app-home-sale',

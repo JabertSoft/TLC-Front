@@ -1,0 +1,169 @@
+header{
+    width: 100%;
+    background-color: rgb(31, 41, 41);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/img/header-interno-1.png'); 
+}
+
+.bg-sm{
+    background:  rgba(31, 41, 41, 0.3);
+    display: flex;
+    flex-direction: row;
+    padding: 0 7%;
+    width: 100%;
+}
+
+
+.left-side{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    width: 50%;
+}
+
+.right-side{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2%;
+    width: 50%;
+ }
+
+ .col-container{
+     display: flex;
+     flex-direction: column;
+ }
+
+ .col-container a{
+    display: inline;
+}
+
+.col-container img{
+    margin-right: 10%;
+}
+
+
+ul#search-menu li {
+    display:inline;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+ul#search-menu li:hover {
+    border-top: solid 2px #fff;
+}
+
+ul#search-menu li a {
+    color:#fff;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+/*****************************************
+                BUTTON MENU
+*******************************************/
+.menu-button {
+    display: inline-block;
+    cursor: pointer;
+    align-self: center;
+}
+
+.left-side .menu-button{
+    display: none;
+}
+
+.menu-button:hover {
+    cursor: hand;
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+
+/*******************************************
+                  CONTACTO
+********************************************/
+
+.contact{
+    align-self: center;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.contact a {
+    margin: 5px;
+    color:#fff;
+}
+
+.contact .languaje{
+    font-size: 0.8em;
+    background: transparent;
+    color:#fff;
+    border: none;
+    padding-right:5px; 
+}
+
+
+ul#login-menu li {
+    display:inline;
+}
+
+ul#login-menu li a {
+    color:#fff;
+    font-size: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.tel {
+    color:#fff;
+    font-size: 0.8em;
+    padding-right: 5px;
+    margin-top: -10px;
+}
+
+
+
+
+.search-container{
+    width: 80%;
+}
+
+
+
+
+/*******************************************
+                  MEDIA
+********************************************/
+@media only screen and (max-width: 768px) {
+    .left-side {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .right-side{
+        display: none;
+    }
+
+    .left-side .menu-button{
+        display: inline-block;
+    }
+}

@@ -6,10 +6,10 @@ export const environment = {
   production: false,
   firebase : {
     apiKey: "AIzaSyArRfKGAQTydWGXY_m7PwU8SItvxdRMomY",
-    authDomain: "theluxurychoice-28620.firebaseapp.com",
-    databaseURL: "https://theluxurychoice-28620.firebaseio.com",
-    projectId: "theluxurychoice-28620",
-    storageBucket: "theluxurychoice-28620.appspot.com",
+    authDomain: "theluxurychoice-7883b.firebaseapp.com",
+    databaseURL: "https://theluxurychoice-7883b.firebaseio.com",
+    projectId: "theluxurychoice-7883b",
+    storageBucket: "theluxurychoice-7883b.appspot.com",
     messagingSenderId: "841426238010"}
 };
 

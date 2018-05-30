@@ -141,11 +141,48 @@ ul#login-menu li a {
 }
 
 
-
-
-.search-container{
-    width: 80%;
+.col-container img{
+max-width: 200px;
 }
+
+.form-container{
+   display: column;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.form-container select{
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    height: 2em;
+}
+
+.form-container input[type="text"], input[type="number"]{
+    width: 49%;
+    height: 2em;
+    border-radius: 5px;
+    margin-bottom: 5px;
+   
+}
+
+input[type="number"]{
+    display: block;
+}
+
+.form-container div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.form-container input[type="submit"]{
+    right: 0;
+    position: relative;
+}
+
 
 
 

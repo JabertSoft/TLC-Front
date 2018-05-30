@@ -175,17 +175,27 @@ ul#login-menu li a {
 
 .search-bar select{
     border-radius: 5px;
-    padding: 10px;
+    height: 30px;
     width: 55%;
 }
 
-.search-bar a{
+.search-bar button{
     color: white;
     margin: 15px;
     text-transform: uppercase;
     font-size: 0.9em;
     font-weight: bold;
+    cursor: hand;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
 }
+
+.search-bar button:hover{
+    color: #87bb43;
+}
+
 
 .activity-filters{
     display: flex;

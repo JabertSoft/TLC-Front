@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, forwardRef } from '@angular/core';
+import { AppComponent } from '../../app.component';
+declare var $:any;
+declare var jQuery:any;
+
+
 
 @Component({
   selector: 'app-activity-results',
@@ -7,9 +12,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivityResultsComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor(@Inject(forwardRef(() => AppComponent)) private appComponent:AppComponent) { 
+    
+  }
+  changeLanguage(language:string){
+    this.appComponent.changeLanguage(language);
+  }
+
 
   ngOnInit() {
+  
+  } 
+  
+  menu_click(){
+      $(".menu-button").toggleClass("change");
+  }
+  buscar(){
+    alert("buscar click");
   }
 
 }

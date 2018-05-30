@@ -1,65 +1,70 @@
-<header >
-  <div class="bg-sm">
-    <div class="left-side">
-        <div class="col-container">
-              <img src="../../assets/img/titulo.png" class="img-fluid" alt="">
-              
-              <ul id="search-menu">
-                  <li><a href="/home/hotel">Hoteles</a></li>
-                  <li><a href="">Vuelos</a></li>
-                  <li><a href="">Actividades</a></li>
-                  <li><a href="">Paquetes</a></li>
-              </ul>  
-              
+<header>
+        <div class="bg-sm">
+          <div class="left-side">
+              <div class="col-container">
+                    <img src="../../assets/img/titulo.png" class="img-fluid" alt="">
+                    
+                    <ul id="search-menu">
+                        <li><a href="">{{'header-sm.hotels' | translate}}</a></li>
+                        <li><a href="">{{'header-sm.flights' | translate}}</a></li>
+                        <li><a href="">{{'header-sm.packages' | translate}}</a></li>
+                        <li><a href="">{{'header-sm.activities' | translate}}</a></li>
+                    </ul>  
+                    
+                    <form #searchForm="ngForm">
+                            <div class="form-container">
+                                  <select class="field" name="ddlDestiny" #ddlDestiny="ngModel" [(ngModel)]="destiny" required >
+                                    <option value="1">Gran Canaria</option>
+                                    <option value="2">Fuerte Ventura</option>
+                                    <option value="3">Lanzarote</option>
+                                    <option value="4">Tenerife</option>
+                                  </select>
+                                  <div>
+                                    <input class="field" type="text" name="checkin" #txtCheckin="ngModel" [(ngModel)]="checkin" required [placeholder]="'hotel.checkin' | translate">
+                                    <input class="field" type="text" name="checkout" #txtCheckout="ngModel" [(ngModel)]="checkout" required [placeholder]="'hotel.checkout' | translate">
+                                  </div>
+                                  <input class="field" type="number" name="roomfor" #txtRoom="ngModel" [(ngModel)]="roomfor" required [placeholder]="'hotel.roomfor' | translate">
+                                  <div class="btn-container">
+                                    <input class="btn-send" type="submit" [value]="'hotel.search' | translate">
+                                  </div>
+                            </div>
+                    </form>
+              </div>
+              <div class="menu-button" (click)="menu_click()">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+              </div>
              
-                   
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
+          </div>  
+          <div class="right-side">
+              <div class="contact">
+                  <div class="social">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <button (click)="changeLanguage('es')" class="languaje">ESP</button>
+                    <button (click)="changeLanguage('en')" class="languaje">ENG</button>
+                  </div>
+                  <div class="login">
+                      <ul id="login-menu">
+                          <li><a href="/signup">{{'header-sm.sign-up' | translate}}</a></li>
+                          <li><a href="">{{'header-sm.sign-in' | translate}}</a></li>
+                      </ul>  
+                  </div>
+                  <div class="tel">
+                      0800-111-2345
+                  </div>
+              </div>
               
+      
+              <div class="menu-button" (click)="menu_click()">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+              </div>
+          </div>  
         </div>
-        <div class="menu-button" (click)="menu_click()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </div>  
-    <div class="right-side">
-        <div class="contact">
-            <div class="social">
-              <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
-              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-              <button (click)="changeLanguage('es')" class="languaje">ESP</button>
-              <button (click)="changeLanguage('en')" class="languaje">ENG</button>
-            </div>
-            <div class="login">
-                <ul id="login-menu">
-                    <li><a href="">ingresar</a></li>
-                    <li><a href="">registrarse</a></li>
-                </ul>  
-            </div>
-            <div class="tel">
-                0800-111-2345
-            </div>
-        </div>
+      </header>
         
-
-        <div class="menu-button" (click)="menu_click()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </div>  
-  </div>
-</header>
-<section class="row">
-    <div class="col-md-5 frase" >
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum pariatur dolore obcaecati magni rem iste, ex aut nobis explicabo voluptas itaque et! Quidem reprehenderit veniam beatae delectus hic, similique. 
-            <br>
-            -TLC-
-        </p>
-    </div>
-</section>

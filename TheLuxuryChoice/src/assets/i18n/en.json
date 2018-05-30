@@ -5,7 +5,8 @@
         "flights":"Flights",
         "packages":"Packages",
         "hotels":"Hotel",
-        "activities":"Activities"    
+        "activities":"Activities", 
+        "search":"Search"        
     },
   "sign-up": {
         "title": "Create an Account",
@@ -17,5 +18,11 @@
         "lastName":"Last Name",
         "terms":"* When you hit 'Create Account' you are accepting our security policies.",
         "send":"Create Account"
+    }, 
+    "hotel":{
+        "checkin":"checkin",
+        "checkout":"checkout",
+        "roomfor":"room-for",
+        "search":"Search"
     }
 }

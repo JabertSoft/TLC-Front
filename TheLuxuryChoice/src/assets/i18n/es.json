@@ -5,7 +5,8 @@
         "flights":"Vuelos",
         "packages":"Paquetes",
         "hotels":"Hoteles",
-        "activities":"Actividades"    
+        "activities":"Actividades",
+        "search":"Buscar"    
     },
     "sign-up": {
         "title": "Crear una cuenta",
@@ -18,9 +19,11 @@
         "terms":"* Al crear una cuenta estás aceptando nuestras políticas de seguridad.",
         "send":"Crear cuenta"
     },
-    "deals":{
-        "from":"Desde el ",
-        "to":"hasta el "
+    "hotel":{
+        "checkin":"Entrada",
+        "checkout":"Salida",
+        "roomfor":"Huespedes",
+        "search":"Buscar"
     }
 
 }

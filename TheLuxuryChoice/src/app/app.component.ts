@@ -30,7 +30,6 @@ export class AppComponent {
   public changeLanguage(language:string){
     this.translate.use(language);
     localStorage.setItem("language",language);
-    
   }
 
 }

@@ -156,13 +156,20 @@ max-width: 200px;
     display: block;
     margin-bottom: 5px;
     height: 2em;
+    border:none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    border-radius: 0;
 }
 
-.form-container input[type="text"], input[type="number"]{
+.form-container input[type="text"], input[type="number"], input[type="date"]{
     width: 49%;
     height: 2em;
-    border-radius: 5px;
     margin-bottom: 5px;
+    border:none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    border-radius: 0;
    
 }
 
@@ -180,7 +187,12 @@ input[type="number"]{
 
 .form-container input[type="submit"]{
     right: 0;
-    position: relative;
+    padding: 10px 30px;
+    background-color: #87bb43;
+    border-radius: 5px;
+    color:#fff;
+    border: none;
+    text-align: center;
 }
 
 

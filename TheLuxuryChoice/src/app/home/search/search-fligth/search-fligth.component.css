@@ -3,7 +3,7 @@ header{
     background-color: rgb(31, 41, 41);
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url('../../../assets/img/header-interno-1.png'); 
+    background-image: url('../../../../assets/img/header-interno-1.png'); 
 }
 
 .bg-sm{
@@ -141,60 +141,6 @@ ul#login-menu li a {
 }
 
 
-.col-container img{
-max-width: 200px;
-}
-
-.form-container{
-   display: column;
-   width: 100%;
-   justify-content: space-between;
-}
-
-.form-container select{
-    width: 100%;
-    display: block;
-    margin-bottom: 5px;
-    height: 2em;
-    border:none;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0px;
-    border-radius: 0;
-}
-
-.form-container input[type="text"], input[type="number"], input[type="date"]{
-    width: 49%;
-    height: 2em;
-    margin-bottom: 5px;
-    border:none;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0px;
-    border-radius: 0;
-   
-}
-
-input[type="number"]{
-    display: block;
-}
-
-.form-container div{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-.form-container input[type="submit"]{
-    right: 0;
-    padding: 10px 30px;
-    background-color: #87bb43;
-    border-radius: 5px;
-    color:#fff;
-    border: none;
-    text-align: center;
-}
-
 
 
 
@@ -214,8 +160,5 @@ input[type="number"]{
 
     .left-side .menu-button{
         display: inline-block;
-    }
-    .col-container{
-        width: 100%;
     }
 }

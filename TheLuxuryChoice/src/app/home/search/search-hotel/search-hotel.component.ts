@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject, forwardRef } from '@angular/core';
-import { AppComponent } from '../../app.component';
-import { Hotel } from '../../models/hotel.model';
+import { AppComponent } from '../../../app.component';
+import { Hotel } from '../../../models/hotel.model';
 declare var $:any;
 declare var jQuery:any;
 

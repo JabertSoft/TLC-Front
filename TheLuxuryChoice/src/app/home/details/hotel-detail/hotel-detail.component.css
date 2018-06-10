@@ -3,7 +3,7 @@ header{
     background-color: rgb(31, 41, 41);
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url('../../../assets/img/header-interno-1.png'); 
+    background-image: url('../../../../assets/img/header-interno-3.png'); 
 }
 
 .bg-sm{
@@ -161,4 +161,95 @@ ul#login-menu li a {
     .left-side .menu-button{
         display: inline-block;
     }
+}
+
+
+/*******************************************
+                  SEARCH BAR
+********************************************/
+.search-bar{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 10px 8%;
+}
+
+.search-bar select{
+    border-radius: 5px;
+    height: 30px;
+    width: 15%;
+    margin-left: 10px;
+}
+
+.search-bar .destiny{
+    border-radius: 5px;
+    height: 30px;
+    width: 30%;
+}
+
+.search-bar input{
+    border-radius: 5px;
+    height: 30px;
+    width: 15%;
+    margin-left: 10px;
+    border:none;
+}
+
+.search-bar button{
+    color: white;
+    margin: 15px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: hand;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover{
+    color: #87bb43;
+}
+
+/*********************************************************************
+
+                                DETAIL
+
+*********************************************************************/
+
+
+.detail-container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dataContainer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-color: #f3f3f3b3;
+    margin-bottom: 25px;
+}
+
+
+.hotel-img{
+    width: 60%;
+    background: url("../../../../assets/img/hotel-detalle.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hotel-map{
+    width: 60%;
+    background: url("../../../../assets/img/mapa-hotel.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.data{
+    padding: 5%;
 }

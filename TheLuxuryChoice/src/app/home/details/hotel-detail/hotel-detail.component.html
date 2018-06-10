@@ -1,0 +1,159 @@
+<header>
+    <div class="bg-sm">
+      <div class="left-side">
+        <div class="col-container">
+          <img src="../../assets/img/titulo.png" class="img-fluid" alt="">
+  
+          <ul id="search-menu">
+            <li>
+              <a href="">{{'header-sm.hotels' | translate}}</a>
+            </li>
+            <li>
+              <a href="">{{'header-sm.flights' | translate}}</a>
+            </li>
+            <li>
+              <a href="">{{'header-sm.packages' | translate}}</a>
+            </li>
+            <li>
+              <a href="">{{'header-sm.activities' | translate}}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-button" (click)="menu_click()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+  
+      </div>
+      <div class="right-side">
+        <div class="contact">
+          <div class="social">
+            <a href="https://facebook.com">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://youtube.com">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <button (click)="changeLanguage('es')" class="languaje">ESP</button>
+            <button (click)="changeLanguage('en')" class="languaje">ENG</button>
+          </div>
+          <div class="login">
+            <ul id="login-menu">
+              <li>
+                <a href="/signup">{{'header-sm.sign-up' | translate}}</a>
+              </li>
+              <li>
+                <a href="">{{'header-sm.sign-in' | translate}}</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tel">
+            0800-111-2345
+          </div>
+        </div>
+  
+  
+        <div class="menu-button" (click)="menu_click()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="search-bar" >
+      <select class="destiny"> 
+          <option value="1">Gran Canaria</option>
+          <option value="2">Fuerte Ventura</option>
+          <option value="3">Lanzarote</option>
+          <option value="4">Tenerife</option>
+      </select>
+      <input type="date">
+      <input type="date">
+      <select>
+          <option value="1">1 pax</option>
+          <option value="2">2 pax</option>
+          <option value="3">3 pax</option>
+          <option value="4">4 pax</option>
+      </select>
+      <button> {{'header-sm.search' | translate}} <i class="fa fa-search"></i></button>
+    </div>
+</header>
+<div class="detail-container">
+  <div class="dataContainer">
+    <div class="hotel-img">
+
+    </div>
+    <div class="data">
+        <p style="padding: 0 15%; text-align: center;">
+          habitación standard con 1 cama matrimonial o 2 individuales.
+        </p>
+
+        <div style="text-align: center;">
+            <p>Precio por noche</p>
+            <p>
+              <strong style="font-size: 2em;">U$D</strong>
+              <span style="font-size: 2em;">200*</span> 
+              <br>
+              <span style="font-style: italic">impuestos y tasas no incluidas</span>
+            </p>
+            <input type="text" value="Solicitar Ya" class="btn-send">
+            <!-- <a href="" class="btn-send" >Ver detalle</a> -->
+            <p>
+              <a href="">Ver Bancos y Tarjetas</a>
+            </p>  
+           </div>
+
+    </div>
+
+    </div>
+    <h2>Hotel Santa Catalina</h2>
+    <h4>Descubre cómo se sienten las estrellas con el mejor servicio en el hotel Santa Catalina</h4>
+    <p>El hotel de luje Santa Catalina se encuentra en las palmas. Ofrece piscina al aire libre, centro de bienestar, piscina cubierta y habitaciones amplias con aire acondicionado, WiFi gratuita y TV via satélite. El centro de bienestar del establecimiento SantaCatalina cuenta con bañera de hidromasaje, baño turco y tratamiento de belleza. El Hotel dispone de pista de paddel, terraza y acceso al spa y al cetro de fitnes por un suplemento. El alojamiento Santa Catalina alberga un restaurante conocido que prepara pescado fresco y platos tipicos canarios. Tambien dispone de bar y bar en la piscina. La ciudad ofrece una gran variedad de bares y restaurantes</p>
+    <p>El hotel Santacatalina está a 10 minutos en coche del puerto de la luz y del puerto deportivo las Palmas. El aeropuerto de Fando se halla a 20 minutos en coche. A las parejas les encanta la ubicacion  - Le han puesto un 8.2 para viajes de 2 personas.</p>
+    <p><strong>¡Hablamos tu idioma!</strong></p>
+    <p>El hotel santa Catalina recibe clientes de Booking.com desde el 23 de noviembre de 2009 <br> Cadena Hotelera: Barceló Hotels & Resorts </p>
+    <p>
+        <i class="fa fa-wifi" style="padding: 5px; font-size: 1.6em;"></i>
+        <i class="fa fa-snowflake" style="padding: 5px; font-size: 1.6em;"></i>
+        <i class="fa fa-dumbbell" style="padding: 5px; font-size: 1.6em;"></i>
+    </p>
+
+    <div class="dataContainer">
+        <div class="hotel-map">
+    
+        </div>
+        <div style="display: flex; flex-direction: column; padding: 60px;">
+            <div style="display: flex; flex-direction: row;">
+              <i class="fa fa-map"></i>
+              <p style="text-align: left; padding-left: 5px;">
+                <span><strong> Ubicación:</strong></span><br>
+                Leon Castillo 227, las palmas de Gran Canaria
+              </p>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <i class="fa fa-bell"></i>
+                <p style="text-align: left; padding-left: 5px;">
+                  <span><strong> Servicios:</strong></span><br>
+                  Piscina, conexion WiFi gratuita, parking, <br>  traslado a aeropuerto, Habitaciones familiares,<br> Spa y Centro de Bienestar.
+                  Cajero automatico y servicio de cambio de moneda.
+                </p>
+              </div>
+              
+            
+    
+        </div>
+</div>
+  
+    
+          
+   
+  
+    
+  

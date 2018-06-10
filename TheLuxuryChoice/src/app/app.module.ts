@@ -12,6 +12,7 @@ import { CookieService } from 'ngx-cookie-service';
 
 import { AppComponent } from './app.component';
 
+import { ContactFormComponent } from './contact-form/contact-form.component';
 import { AboutComponent } from './about/about.component';
 import { ErrorComponent } from './error/error.component';
 import { HeaderSmComponent } from './header-sm/header-sm.component';
@@ -21,10 +22,10 @@ import { SearchHotelComponent } from './home/search/search-hotel/search-hotel.co
 import { SearchFligthComponent } from './home/search/search-fligth/search-fligth.component';
 import { SearchPackagesComponent } from './home/search/search-packages/search-packages.component';
 import { SearchActivitiesComponent } from './home/search/search-activities/search-activities.component';
-import { ActivityResultsComponent } from './home/activity-results/activity-results.component';
+import { ActivityResultsComponent } from './home/results/activity-results/activity-results.component';
 import { PackageDetailComponent } from './home/details/package-detail/package-detail.component';
 import { HotelDetailComponent } from './home/details/hotel-detail/hotel-detail.component';
-import { ContactFormComponent } from './home/contact-form/contact-form.component';
+import { FooterSmComponent } from './footer-sm/footer-sm.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { ContactFormComponent } from './home/contact-form/contact-form.component
     ActivityResultsComponent,
     PackageDetailComponent,
     HotelDetailComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    FooterSmComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,49 @@
+footer {
+    color: rgb(118, 118, 118);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: rgb(118, 118, 118);
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin: 100px 0px;
+}
+
+footer div.footer {
+    width: 80%;
+    margin: 0px auto;
+}
+
+footer div.footer .footer-content{
+    text-align: center;
+}
+
+footer div.footer ul li {
+    list-style-type: none;
+}
+
+footer div.footer .footer-box, 
+footer div.footer .footer-vr {
+    display: inline-block;
+    text-align: left;
+}
+
+footer div.footer .footer-box {
+    margin: 0px 20px;
+}
+
+footer div.footer .footer-vr {
+    border-left: 1px solid #000;
+    height: 70px;
+}
+
+footer div.footer a {
+    color: rgb(118, 118, 118);
+    text-decoration: none;
+}
+
+footer div.footer a:hover {
+    color: rgb(118, 118, 118);
+    text-decoration: underline;
+}

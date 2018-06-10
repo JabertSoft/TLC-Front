@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject, forwardRef } from '@angular/core';
-import { AppComponent } from '../../app.component';
+import { AppComponent } from '../../../app.component';
 declare var $:any;
 declare var jQuery:any;
 

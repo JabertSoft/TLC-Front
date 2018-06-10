@@ -4,7 +4,7 @@ header{
     background-color: rgb(31, 41, 41);
     background-position: center 40%;
     background-repeat: no-repeat;
-    background-image: url('../../../assets/img/header-interno-7.png'); 
+    background-image: url('../../../../assets/img/header-interno-7.png'); 
 }
 
 .bg-sm{
@@ -223,7 +223,7 @@ ul#login-menu li a {
 .activity-image
 {
     width: 40%;
-    background: url('../../../assets/img/actividades-01.png') center center;
+    background: url('../../../../assets/img/actividades-01.png') center center;
     background-size: cover; 
 }
 .activity-description{

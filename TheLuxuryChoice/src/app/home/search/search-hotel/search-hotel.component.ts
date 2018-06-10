@@ -31,8 +31,10 @@ export class SearchHotelComponent implements OnInit {
   } 
   
   menu_click(){
-      $(".menu-button").toggleClass("change");
-  }
+    $(".menu-button").toggleClass("change");
+    $('.main-nav, .menu-btn').toggleClass('active');
+    
+}
 
 }
 

@@ -24,6 +24,7 @@ import { SearchActivitiesComponent } from './home/search/search-activities/searc
 import { ActivityResultsComponent } from './home/activity-results/activity-results.component';
 import { PackageDetailComponent } from './home/details/package-detail/package-detail.component';
 import { HotelDetailComponent } from './home/details/hotel-detail/hotel-detail.component';
+import { NewsComponent } from './news/news/news.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { HotelDetailComponent } from './home/details/hotel-detail/hotel-detail.c
     SearchActivitiesComponent,
     ActivityResultsComponent,
     PackageDetailComponent,
-    HotelDetailComponent
+    HotelDetailComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

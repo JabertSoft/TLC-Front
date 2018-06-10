@@ -65,6 +65,14 @@ button{cursor: hand;}
 
 
 
+header{
+    width: 100%;
+    background-color: rgb(31, 41, 41);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/header-interno-4.png'); 
+}
+
 /*******************************************
                   MEDIA
 ********************************************/

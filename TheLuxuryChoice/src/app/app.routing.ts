@@ -13,6 +13,7 @@ import { SearchActivitiesComponent } from './home/search/search-activities/searc
 import { ActivityResultsComponent } from './home/activity-results/activity-results.component';
 import { PackageDetailComponent } from './home/details/package-detail/package-detail.component';
 import { HotelDetailComponent } from './home/details/hotel-detail/hotel-detail.component';
+import { NewsComponent } from './news/news/news.component';
 
 
 const appRoutes: Routes = [
@@ -43,6 +44,7 @@ const appRoutes: Routes = [
                 ]
         },
         { path: 'about', component: AboutComponent },
+        { path: 'news', component: NewsComponent},
         { path: 'signup', component: SignUpComponent },
         { path: '**', component: ErrorComponent },
 ];

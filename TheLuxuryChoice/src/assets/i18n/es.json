@@ -24,6 +24,9 @@
         "checkout":"Salida",
         "roomfor":"Huespedes",
         "search":"Buscar"
+    },
+    "package-detail":{
+        "create-budget":"Crear Presupuesto"
     }
 
 }

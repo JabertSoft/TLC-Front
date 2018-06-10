@@ -11,30 +11,14 @@
                         <li><a href="">{{'header-sm.activities' | translate}}</a></li>
                     </ul>  
                     
-                    <form #searchForm="ngForm">
-                            <div class="form-container">
-                                  <select class="field" name="ddlDestiny" #ddlDestiny="ngModel" [(ngModel)]="destiny" required >
-                                    <option value="1">Gran Canaria</option>
-                                    <option value="2">Fuerte Ventura</option>
-                                    <option value="3">Lanzarote</option>
-                                    <option value="4">Tenerife</option>
-                                  </select>
-                                  <div>
-                                    <input class="field" type="date" name="checkin" #txtCheckin="ngModel" [(ngModel)]="checkin" required [placeholder]="'hotel.checkin' | translate">
-                                    <input class="field" type="date" name="checkout" #txtCheckout="ngModel" [(ngModel)]="checkout" required [placeholder]="'hotel.checkout' | translate">
-                                  </div>
-                                  <input class="field" type="number" name="roomfor" #txtRoom="ngModel" [(ngModel)]="roomfor" required [placeholder]="'hotel.roomfor' | translate">
-                                  <div class="btn-container">
-                                    <input type="submit" [value]="'hotel.search' | translate">
-                                  </div>
-                            </div>
-                    </form>
+                    <div class="menu-button" (click)="menu_click()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                  
               </div>
-              <div class="menu-button" (click)="menu_click()">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
-              </div>
+              
              
           </div>  
           <div class="right-side">

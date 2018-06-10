@@ -215,4 +215,7 @@ input[type="number"]{
     .left-side .menu-button{
         display: inline-block;
     }
+    .col-container{
+        width: 100%;
+    }
 }

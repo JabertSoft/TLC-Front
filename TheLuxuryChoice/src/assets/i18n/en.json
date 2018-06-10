@@ -24,5 +24,9 @@
         "checkout":"checkout",
         "roomfor":"room-for",
         "search":"Search"
+    },
+    "package-detail":{
+        "create-budget":"Create Budget"
     }
+
 }

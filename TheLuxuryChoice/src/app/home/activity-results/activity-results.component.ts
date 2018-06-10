@@ -25,11 +25,15 @@ export class ActivityResultsComponent implements OnInit {
   
   } 
   
-  menu_click(){
-      $(".menu-button").toggleClass("change");
-  }
-  buscar(){
-    alert("buscar click");
-  }
+  // menu_click(){
+  //     $(".menu-button").toggleClass("change");
+  // }
+  // buscar(){
+  //   alert("buscar click");
+  // }
+
+  // menu_click() {
+  //   $(".menu-button").toggleClass("change");
+  // }
 
 }

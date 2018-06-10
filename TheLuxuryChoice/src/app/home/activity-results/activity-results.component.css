@@ -1,9 +1,10 @@
 header{
     width: 100%;
+    background-size: cover;
     background-color: rgb(31, 41, 41);
-    background-position: center center;
+    background-position: center 40%;
     background-repeat: no-repeat;
-    background-image: url('../../../assets/img/header-interno-3.png'); 
+    background-image: url('../../../assets/img/header-interno-7.png'); 
 }
 
 .bg-sm{
@@ -51,6 +52,10 @@ ul#search-menu li {
 
 ul#search-menu li:hover {
     border-top: solid 2px #fff;
+}
+
+ul#search-menu li:active {
+    color: #6ea12c;
 }
 
 ul#search-menu li a {
@@ -204,11 +209,16 @@ ul#login-menu li a {
     margin-top: 25px;
 }
 
+.activity-filter
+{
+    border: none;
+}
+
 .activity-item{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    margin: 20px 0px 0px 0px;
 }
 .activity-image
 {
@@ -220,6 +230,7 @@ ul#login-menu li a {
     width: 60%;
     padding: 30px;
     background-color: #f2f2f2;
+    border: 1px solid #fff;
     display: flex;
 
 }
@@ -235,9 +246,50 @@ ul#login-menu li a {
     margin: 10px;
 }
 
-.activity-price{
+.activity-data p .marca{
+    text-align: center;
+    width: 15px;
+    margin-right: 10px;
+}
+
+.activity-price-wrapper{
     width: 40%;
     margin: 20px auto;
     text-align: center;
 }
 
+.activity-price-wrapper .activity-price{
+    font-size: 1.7em;
+}
+
+.activity-pager-wrapper{
+    text-align: center;
+    margin: 5px;
+}
+
+.activity-pager-wrapper .pager-number,
+.activity-pager-wrapper .pager-number-active{
+    text-align: center;
+    margin: 1px;
+    /**/
+    border-radius: 50%;
+  /* remove if you don't care about IE8 */
+    width: 15px;
+    line-height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-table;
+    font-size: 0.6em;
+    color: white;
+}
+.activity-pager-wrapper .pager-number{
+    background-color: #6ea12c;
+}
+
+.activity-pager-wrapper .pager-number-active{
+    background-color: #282828;
+}
+
+.btn-send{
+    text-transform: uppercase;
+}

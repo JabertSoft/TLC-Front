@@ -34,7 +34,7 @@ footer div.footer .footer-box {
 }
 
 footer div.footer .footer-vr {
-    border-left: 1px solid #000;
+    border-left: 1px solid rgb(118, 118, 118);
     height: 70px;
 }
 
@@ -46,4 +46,20 @@ footer div.footer a {
 footer div.footer a:hover {
     color: rgb(118, 118, 118);
     text-decoration: underline;
+}
+
+.suscribe-text{
+    border: none;
+    border-bottom: 1px solid  rgb(118, 118, 118);
+}
+
+.footer-socials{
+    position: relative;
+    bottom: -15px;    
+}
+
+.footer-socials > a{
+    display: block;
+    padding: 2.5px;
+    font-size: 1.5em;
 }

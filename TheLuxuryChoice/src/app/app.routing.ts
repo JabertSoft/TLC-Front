@@ -15,14 +15,15 @@ import { ActivityResultsComponent } from './home/results/activity-results/activi
 import { PackageDetailComponent } from './home/details/package-detail/package-detail.component';
 import { HotelDetailComponent } from './home/details/hotel-detail/hotel-detail.component';
 import { NewsComponent } from './news/news/news.component';
+import { HomeSearchComponent } from './home/search/home-search/home-search.component';
 
 
 const appRoutes: Routes = [
         {
                 path: '', component: HomeMainComponent,
                 children: [
-                        { path: '', component: SearchHotelComponent },
-                        { path: 'hotel', component: SearchHotelComponent },
+                        { path: '', component: HomeSearchComponent },
+                        { path: 'hotel', component: HomeSearchComponent },
                         { path: 'hotel-detail/:id', component: HotelDetailComponent },
                         { path: 'fligth', component: SearchFligthComponent },
                         { path: 'packages', component: SearchPackagesComponent },
@@ -34,8 +35,8 @@ const appRoutes: Routes = [
         {
                 path: 'home', component: HomeMainComponent,
                 children: [
-                        { path: '', component: SearchHotelComponent },
-                        { path: 'hotel', component: SearchHotelComponent },
+                        { path: '', component: HomeSearchComponent },
+                        { path: 'hotel', component: HomeSearchComponent },
                         { path: 'hotel-detail/:id', component: HotelDetailComponent },
                         { path: 'fligth', component: SearchFligthComponent },
                         { path: 'packages', component: SearchPackagesComponent },
@@ -44,7 +45,7 @@ const appRoutes: Routes = [
                         { path: 'activity-results', component: ActivityResultsComponent }
                 ]
         },
-        { path: 'contact-form', component: ContactFormComponent },
+        { path: 'contact', component: ContactFormComponent },
         { path: 'about', component: AboutComponent },
         { path: 'news', component: NewsComponent},
         { path: 'signup', component: SignUpComponent },

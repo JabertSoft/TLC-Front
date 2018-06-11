@@ -27,6 +27,7 @@ import { PackageDetailComponent } from './home/details/package-detail/package-de
 import { HotelDetailComponent } from './home/details/hotel-detail/hotel-detail.component';
 import { FooterSmComponent } from './footer-sm/footer-sm.component';
 import { NewsComponent } from './news/news/news.component';
+import { HomeSearchComponent } from './home/search/home-search/home-search.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { NewsComponent } from './news/news/news.component';
     HotelDetailComponent,
     ContactFormComponent,
     FooterSmComponent,
-    NewsComponent
+    NewsComponent,
+    HomeSearchComponent
   ],
   imports: [
     BrowserModule,

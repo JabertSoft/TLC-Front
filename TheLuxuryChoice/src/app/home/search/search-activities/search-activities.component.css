@@ -165,49 +165,46 @@ ul#login-menu li a {
 
 
 /******************************************************/
-
 .float-nav {
     z-index: 2;
+    padding-top: 6%; 
   }
-
-  .float-nav > a.menu-btn {
+  .float-nav > div.menu-btn {
     text-decoration: none;
     display: block;
-    background-color: #000;
     color: white;
     padding: 17px 19px 12px 19px;
     text-align: center;
-    box-shadow: 2px 2px 8px #777;
     border-radius: 300px;
   }
-  .float-nav > a.menu-btn.active {
+  .float-nav > div.menu-btn.active {
     transition: background-color 250ms linear;
     background-color: transparent;
     box-shadow: none;
   }
-  .float-nav > a.menu-btn.active > ul > li.line:nth-child(1) {
+  .float-nav > div.menu-btn.active > ul > li.line:nth-child(1) {
     border-width: 2px;
     -moz-transform: rotate(45deg) translate(4px, 6px);
     -ms-transform: rotate(45deg) translate(4px, 6px);
     -webkit-transform: rotate(45deg) translate(4px, 6px);
     transform: rotate(45deg) translate(4px, 6px);
   }
-  .float-nav > a.menu-btn.active > ul > li.line:nth-child(2) {
+  .float-nav > div.menu-btn.active > ul > li.line:nth-child(2) {
     visibility: hidden;
   }
-  .float-nav > a.menu-btn.active > ul > li.line:nth-child(3) {
+  .float-nav > div.menu-btn.active > ul > li.line:nth-child(3) {
     border-width: 2px;
     -moz-transform: rotate(-45deg) translate(8px, -10px);
     -ms-transform: rotate(-45deg) translate(8px, -10px);
     -webkit-transform: rotate(-45deg) translate(8px, -10px);
     transform: rotate(-45deg) translate(8px, -10px);
   }
-  .float-nav > a.menu-btn > ul {
+  .float-nav > div.menu-btn > ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  .float-nav > a.menu-btn > ul > li.line {
+  .float-nav > div.menu-btn > ul > li.line {
     border: 1px solid white;
     width: 100%;
     margin-bottom: 7px;
@@ -216,7 +213,7 @@ ul#login-menu li a {
     -webkit-transition-duration: 0.1s;
     transition-duration: 0.1s;
   }
-  .float-nav > a.menu-btn > .menu-txt {
+  .float-nav > div.menu-btn > .menu-txt {
     width: 100%;
     text-align: center;
     font-size: 12px;
@@ -229,7 +226,6 @@ ul#login-menu li a {
     font-family: sans-serif;
     position: absolute;
     transition: opacity 250ms;
-    right: 28%;
   }
   .main-nav.active {
     display: block;
@@ -242,7 +238,7 @@ ul#login-menu li a {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #000000;
     box-shadow: 2px 2px 8px #777;
     border-radius: 3px 3px 3px 3px;
   }
@@ -253,12 +249,7 @@ ul#login-menu li a {
     padding: 18px 80px 18px 18px;
     color: white;
   }
-
-  .main-nav > ul > li {
-    color: white;
-    text-align: left;
-   
-  }
+  
   .main-nav > ul > li > a:hover {
     font-weight: 400;
     color: #87bb43;

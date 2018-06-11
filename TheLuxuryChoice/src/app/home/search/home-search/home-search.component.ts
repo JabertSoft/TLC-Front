@@ -1,14 +1,14 @@
 import { Component, OnInit, Inject, forwardRef } from '@angular/core';
-import { AppComponent } from '../../../../app.component';
+import { AppComponent } from '../../../app.component';
 declare var $:any;
 declare var jQuery:any;
 
 @Component({
-  selector: 'app-search-activities',
-  templateUrl: './search-activities.component.html',
-  styleUrls: ['./search-activities.component.css']
+  selector: 'app-home-search',
+  templateUrl: './home-search.component.html',
+  styleUrls: ['./home-search.component.css']
 })
-export class SearchActivitiesComponent implements OnInit {
+export class HomeSearchComponent implements OnInit {
 
   constructor(@Inject(forwardRef(() => AppComponent)) private main:AppComponent) { 
     
@@ -28,3 +28,4 @@ export class SearchActivitiesComponent implements OnInit {
 }
 
 }
+

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FooterSmComponent } from './footer-sm.component';
+import { HomeSearchComponent } from './home-search.component';
 
-describe('FooterSmComponent', () => {
-  let component: FooterSmComponent;
-  let fixture: ComponentFixture<FooterSmComponent>;
+describe('HomeSearchComponent', () => {
+  let component: HomeSearchComponent;
+  let fixture: ComponentFixture<HomeSearchComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FooterSmComponent ]
+      declarations: [ HomeSearchComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FooterSmComponent);
+    fixture = TestBed.createComponent(HomeSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

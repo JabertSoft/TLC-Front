@@ -12,7 +12,6 @@ declare var jQuery:any;
 })
 export class ActivityResultsComponent implements OnInit {
 
-  
   constructor(@Inject(forwardRef(() => AppComponent)) private appComponent:AppComponent) { 
     
   }
@@ -25,15 +24,9 @@ export class ActivityResultsComponent implements OnInit {
   
   } 
   
-  // menu_click(){
-  //     $(".menu-button").toggleClass("change");
-  // }
-  // buscar(){
-  //   alert("buscar click");
-  // }
-
-  // menu_click() {
-  //   $(".menu-button").toggleClass("change");
-  // }
-
+  menu_click(){
+      $(".menu-button").toggleClass("change");
+      $('.main-nav, .menu-btn').toggleClass('active');
+      
+  }
 }

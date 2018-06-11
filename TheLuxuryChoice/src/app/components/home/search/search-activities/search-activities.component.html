@@ -1,102 +1,139 @@
 <header>
-        <div class="bg-sm">
-          <div style="display: flex; flex-direction: row; height: 50%;">
+    <div class="bg-sm">
+        <div style="display: flex; flex-direction: row; height: 50%;">
             <div class="left-side">
                 <div class="col-container">
-                      <img src="../../assets/img/titulo.png" class="img-fluid" alt="">
-                      
-                      <ul id="search-menu">
-                            <li><a href="/home" >{{'header-sm.hotels' | translate}}</a></li>
-                            <li><a href="/fligth">{{'header-sm.flights' | translate}}</a></li>
-                            <li><a href="/packages">{{'header-sm.packages' | translate}}</a></li>
-                            <li><a href="/activities" style="color: #87bb43">{{'header-sm.activities' | translate}}</a></li>
-                        </ul> 
+                    <img src="../../assets/img/titulo.png" class="logo img-fluid" alt="">
+
+                    <ul id="search-menu">
+                        <li>
+                            <a href="/home">{{'header-sm.hotels' | translate}}</a>
+                        </li>
+                        <li>
+                            <a href="/fligth">{{'header-sm.flights' | translate}}</a>
+                        </li>
+                        <li>
+                            <a href="/packages">{{'header-sm.packages' | translate}}</a>
+                        </li>
+                        <li>
+                            <a href="/activities" style="color: #87bb43">{{'header-sm.activities' | translate}}</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="menu-button" (click)="menu_click()">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
-              
-            </div>  
+
+            </div>
             <div class="right-side">
                 <div class="contact">
                     <div class="social">
-                      <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-                      <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
-                      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                      <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-                      <button (click)="changeLanguage('es')" class="languaje">ESP</button>
-                      <button (click)="changeLanguage('en')" class="languaje">ENG</button>
+                        <a href="https://facebook.com">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://youtube.com">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <button (click)="changeLanguage('es')" class="languaje">ESP</button>
+                        <button (click)="changeLanguage('en')" class="languaje">ENG</button>
                     </div>
                     <div class="login">
                         <ul id="login-menu">
-                            <li><a href="/signup">{{'header-sm.sign-up' | translate}}</a></li>
-                            <li><a href="">{{'header-sm.sign-in' | translate}}</a></li>
-                        </ul>  
+                            <li>
+                                <a href="/signup">{{'header-sm.sign-up' | translate}}</a>
+                            </li>
+                            <li>
+                                <a href="">{{'header-sm.sign-in' | translate}}</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="tel">
                         0800-111-2345
                     </div>
                 </div>
-                
-        
+
+
                 <!--<div class="menu-button" (click)="menu_click()">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>-->
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>-->
                 <div class="float-nav" (click)="menu_click()">
-                        <div href="#" class="menu-btn">
-                          <ul>
+                    <div href="#" class="menu-btn">
+                        <ul>
                             <li class="line"></li>
                             <li class="line"></li>
                             <li class="line"></li>
-                          </ul>
-                          <div class="menu-txt">Menu</div>
-                        </div>
+                        </ul>
+                        <div class="menu-txt">Menu</div>
+                    </div>
                 </div>
                 <div class="main-nav">
-                        <ul>
-                          <li><a href="/about">About us</a></li>
-                          <li><a href="/packages">Paquetes</a></li>
-                          <li><a href="/activities">Actividades</a></li>
-                          <li><a href="/news">Novedades</a></li>
-                          <li><a href="#">Pagos</a></li>
-                          <li><a href="/contact">Contacto</a></li>
-                        
-                        </ul>
+                    <ul>
+                        <li>
+                            <a href="/about">About us</a>
+                        </li>
+                        <li>
+                            <a href="/packages">Paquetes</a>
+                        </li>
+                        <li>
+                            <a href="/activities">Actividades</a>
+                        </li>
+                        <li>
+                            <a href="/news">Novedades</a>
+                        </li>
+                        <li>
+                            <a href="#">Pagos</a>
+                        </li>
+                        <li>
+                            <a href="/contact">Contacto</a>
+                        </li>
+
+                    </ul>
                 </div>
-        
-        
+
+
             </div>
-          </div> 
-          <div style="width: 100%; height: 50% ">
-              <select class="destiny"> 
-                  <option value="1">Gran Canaria</option>
-                  <option value="2">Fuerte Ventura</option>
-                  <option value="3">Lanzarote</option>
-                  <option value="4">Tenerife</option>
-              </select>
-              <input type="date" class="fecha" style="margin-right: 2%;">
-              <input type="date" class="fecha">
-              <select class="pax">
-                  <option value="1">1 pax</option>
-                  <option value="2">2 pax</option>
-                  <option value="3">3 pax</option>
-                  <option value="4">4 pax</option>
-              </select>
-              <a  class="send" href="/activity-result">{{'header-sm.search' | translate}} <i class="fa fa-search"></i></a>
-          </div> 
         </div>
-          
-      </header>
-      <section class="row">
-          <div style="text-align: center; margin: 20px auto; width: 50%; ">
-              <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum pariatur dolore obcaecati magni rem iste, ex aut nobis explicabo voluptas itaque et! Quidem reprehenderit veniam beatae delectus hic, similique. 
-                  <br>
-                  -TLC-
-              </p>
-          </div>
-      </section>
+        <div class="search-controls">
+            <select class="destiny">
+                <option value="1">Gran Canaria</option>
+                <option value="2">Fuerte Ventura</option>
+                <option value="3">Lanzarote</option>
+                <option value="4">Tenerife</option>
+            </select>
+            <input type="date" class="fecha">
+            <input type="date" class="fecha">
+            <select class="pax">
+                <option value="1">1 pax</option>
+                <option value="2">2 pax</option>
+                <option value="3">3 pax</option>
+                <option value="4">4 pax</option>
+            </select>
+            <a class="send" href="/hotel-result">{{'header-sm.search' | translate}}
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+    </div>
+
+</header>
+
+<section class="row">
+    <div class="font-italic text-center">
+        <div class="cita-container">
+            <p class="cita">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum pariatur dolore obcaecati magni rem iste, ex aut
+                nobis explicabo voluptas itaque et! Quidem reprehenderit veniam beatae delectus hic, similique.
+            </p>
+        </div>
+        <p class="font-weight-bold">TLC</p>
+    </div>
+</section>

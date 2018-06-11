@@ -1,0 +1,64 @@
+<header>
+  <div class="bg-sm">
+    <div class="left-side">
+        <div class="col-container">
+              <img src="../../assets/img/titulo.png" class="img-fluid" alt="">
+              
+              <ul id="search-menu">
+                  <li><a href="">{{'header-sm.hotels' | translate}}</a></li>
+                  <li><a href="">{{'header-sm.flights' | translate}}</a></li>
+                  <li><a href="">{{'header-sm.packages' | translate}}</a></li>
+                  <li><a href="">{{'header-sm.activities' | translate}}</a></li>
+              </ul>  
+        </div>
+        <div class="menu-button" (click)="menu_click()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+       
+    </div>  
+    <div class="right-side">
+        <div class="contact">
+            <div class="social">
+              <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+              <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+              <button (click)="changeLanguage('es')" class="languaje">ESP</button>
+              <button (click)="changeLanguage('en')" class="languaje">ENG</button>
+            </div>
+            <div class="login">
+                <ul id="login-menu">
+                    <li><a href="/signup">{{'header-sm.sign-up' | translate}}</a></li>
+                    <li><a href="">{{'header-sm.sign-in' | translate}}</a></li>
+                </ul>  
+            </div>
+            <div class="tel">
+                0800-111-2345
+            </div>
+        </div>
+        
+
+        <div class="menu-button" (click)="menu_click()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="main-nav">
+                <ul>
+                  <li><a href="/about">About us</a></li>
+                  <li><a href="/packages">Paquetes</a></li>
+                  <li><a href="/activities">Actividades</a></li>
+                  <li><a href="/news">Novedades</a></li>
+                  <li><a href="#">Pagos</a></li>
+                  <li><a href="/contact-form">Contacto</a></li>
+                </ul>
+         </div>
+
+
+    </div>  
+  </div>
+</header>
+  

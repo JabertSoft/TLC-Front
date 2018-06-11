@@ -2,19 +2,19 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 //importar componentes
-import { HomeMainComponent } from './home/home-main/home-main.component';
-import { ErrorComponent } from './error/error.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
-import { AboutComponent } from './about/about.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { SearchHotelComponent } from './home/search/search-hotel/search-hotel.component';
-import { SearchFligthComponent } from './home/search/search-fligth/search-fligth.component';
-import { SearchPackagesComponent } from './home/search/search-packages/search-packages.component';
-import { SearchActivitiesComponent } from './home/search/search-activities/search-activities.component';
-import { ActivityResultsComponent } from './home/results/activity-results/activity-results.component';
-import { PackageDetailComponent } from './home/details/package-detail/package-detail.component';
-import { HotelDetailComponent } from './home/details/hotel-detail/hotel-detail.component';
-import { NewsComponent } from './news/news/news.component';
+import { HomeMainComponent } from './Components/home/home-main/home-main.component';
+import { ErrorComponent } from './Components/error/error.component';
+import { ContactFormComponent } from './Components/contact-form/contact-form.component';
+import { AboutComponent } from './Components/about/about.component';
+import { SignUpComponent } from './Components/sign-up/sign-up.component';
+import { SearchHotelComponent } from './Components/home/search/search-hotel/search-hotel.component';
+import { SearchFligthComponent } from './Components/home/search/search-fligth/search-fligth.component';
+import { SearchPackagesComponent } from './Components/home/search/search-packages/search-packages.component';
+import { SearchActivitiesComponent } from './Components/home/search/search-activities/search-activities.component';
+import { ActivityResultsComponent } from './Components/home/results/activity-results/activity-results.component';
+import { PackageDetailComponent } from './Components/home/details/package-detail/package-detail.component';
+import { HotelDetailComponent } from './Components/home/details/hotel-detail/hotel-detail.component';
+import { NewsComponent } from './Components/news/news.component';
 
 
 const appRoutes: Routes = [

@@ -185,11 +185,9 @@ ul#login-menu li a {
     border: none;
     border-radius: 5px;
     height: 30px;
-    width: 55%;
     margin-right: 1px;
     padding-left: 2px;
 }
-
 
 .search-bar button{
     color: white;
@@ -256,7 +254,6 @@ ul#login-menu li a {
 .activity-data p .marca{
     text-align: center;
     width: 15px;
-    margin-right: 10px;
 }
 
 .activity-price-wrapper{

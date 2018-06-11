@@ -12,6 +12,7 @@ import { SearchFligthComponent } from './components/home/search/search-fligth/se
 import { SearchPackagesComponent } from './components/home/search/search-packages/search-packages.component';
 import { SearchActivitiesComponent } from './components/home/search/search-activities/search-activities.component';
 import { ActivityResultsComponent } from './components/home/results/activity-results/activity-results.component';
+import { HotelResultsComponent } from './components/home/results/hotel-results/hotel-results.component';
 import { PackageDetailComponent } from './components/home/details/package-detail/package-detail.component';
 import { HotelDetailComponent } from './components/home/details/hotel-detail/hotel-detail.component';
 import { NewsComponent } from './components/news/news.component';
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
                         { path: 'packages', component: SearchPackagesComponent },
                         { path: 'package-detail/:id', component: PackageDetailComponent },
                         { path: 'activities', component: SearchActivitiesComponent },
-                        { path: 'activity-results', component: ActivityResultsComponent }
+                        { path: 'activity-results', component: ActivityResultsComponent },
+                        { path: 'hotel-results', component: HotelResultsComponent }
                 ]
         },
         {
@@ -42,7 +44,8 @@ const appRoutes: Routes = [
                         { path: 'packages', component: SearchPackagesComponent },
                         { path: 'package-detail/:id', component: PackageDetailComponent },
                         { path: 'activities', component: SearchActivitiesComponent },
-                        { path: 'activity-results', component: ActivityResultsComponent }
+                        { path: 'activity-results', component: ActivityResultsComponent },
+                        { path: 'hotel-results', component: HotelResultsComponent }
                 ]
         },
         { path: 'contact', component: ContactFormComponent },

@@ -34,6 +34,7 @@ import { PackageDetailComponent } from './components/home/details/package-detail
 import { HotelDetailComponent } from './components/home/details/hotel-detail/hotel-detail.component';
 import { FooterSmComponent } from './components/footer-sm/footer-sm.component';
 import { NewsComponent } from './components/news/news.component';
+import { HotelResultsComponent } from './components/home/results/hotel-results/hotel-results.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { NewsComponent } from './components/news/news.component';
     ContactFormComponent,
     FooterSmComponent,
     NewsComponent,
-    HomeSearchComponent
+    HomeSearchComponent,
+    HotelResultsComponent
   ],
   imports: [
     BrowserModule,

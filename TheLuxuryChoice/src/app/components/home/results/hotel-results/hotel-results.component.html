@@ -1,0 +1,221 @@
+<header>
+  <div class="bg-sm">
+    <div class="left-side">
+      <div class="col-container">
+        <img src="../../assets/img/titulo.png" class="img-fluid" alt="">
+
+        <ul id="search-menu">
+          <li>
+            <a href="">{{'header-sm.hotels' | translate}}</a>
+          </li>
+          <li>
+            <a href="">{{'header-sm.flights' | translate}}</a>
+          </li>
+          <li>
+            <a href="">{{'header-sm.packages' | translate}}</a>
+          </li>
+          <li>
+            <a href="">{{'header-sm.activities' | translate}}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-button" (click)="menu_click()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+    </div>
+    <div class="right-side">
+      <div class="contact">
+        <div class="social">
+          <a href="https://facebook.com">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://youtube.com">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <button (click)="changeLanguage('es')" class="languaje">ESP</button>
+          <button (click)="changeLanguage('en')" class="languaje">ENG</button>
+        </div>
+        <div class="login">
+          <ul id="login-menu">
+            <li>
+              <a href="/signup">{{'header-sm.sign-up' | translate}}</a>
+            </li>
+            <li>
+              <a href="">{{'header-sm.sign-in' | translate}}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tel">
+          0800-111-2345
+        </div>
+      </div>
+
+
+      <div class="float-nav" (click)="menu_click()">
+        <div href="#" class="menu-btn">
+          <ul>
+            <li class="line"></li>
+            <li class="line"></li>
+            <li class="line"></li>
+          </ul>
+          <div class="menu-txt">Menu</div>
+        </div>
+      </div>
+      <div class="main-nav">
+        <ul>
+          <li>
+            <a href="/about">About us</a>
+          </li>
+          <li>
+            <a href="/packages">Paquetes</a>
+          </li>
+          <li>
+            <a href="/activities">Actividades</a>
+          </li>
+          <li>
+            <a href="/news">Novedades</a>
+          </li>
+          <li>
+            <a href="#">Pagos</a>
+          </li>
+          <li>
+            <a href="/contact">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="search-bar">
+    <select>
+      <option value="3">Lanzarote</option>
+      <option value="1">Gran Canaria</option>
+      <option value="2">Fuerte Ventura</option>
+      <option value="4">Tenerife</option>
+    </select>
+    <input type="date" class="fecha">
+    <input type="date" class="fecha">
+    <select class="pax">
+      <option value="1">1 pax</option>
+      <option value="2">2 pax</option>
+      <option value="3">3 pax</option>
+      <option value="4">4 pax</option>
+  </select>
+    <button> {{'header-sm.search' | translate}}
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+</header>
+
+<div class="founded-activities">
+  <div class="activity-filters">
+    <div class="float-left">12 hoteles encontrados</div>
+    <div class="float-right">ORDERNAR POR:
+      <select class="activity-filter font-italic">
+        <option value="menor precio">menor precio</option>
+      </select>
+    </div>
+  </div>
+  <hr class="underline" />
+  <div>
+    <div class="activity-item">
+      <div class="activity-image">
+      </div>
+      <div class="activity-description">
+        <div class="activity-data">
+          <p>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span>|</span>
+            <span class="badge badge-success marca">9</span>
+            <span>|</span>
+            <span class="fa fa-map-marker text text-danger marca"></span>
+            &nbsp;
+            <span class="fa fa-wifi"></span>
+            &nbsp;
+            <span class="fa fa-snowflake"></span>
+          </p>
+          <h2 class="font-weight-bold">Hotel Santa Catalina</h2>
+          <p>Las Palmas de Gran Canaria<br />A 2,6 km del centro, cerca de la playa</p>
+          <p class="font-italic">El hotel de lujo Santa Catalina se encuentra en Las Palmas. Ofrece piscina al aire libre, centro de bienestar, piscina cubierta y habitaciones amplias con aire acondicionado, wifi gratuita y TV vía...</p>
+          <p class="text-danger font-italic">Última habitación disponible!</p>
+          <p class="text-success font-italic">No olvides contratar tu servicio de Asistencia al viajero!</p>
+        </div>
+        <div class="activity-price-wrapper">
+          <p>Precio por noche</p>
+          <p class="activity-price">
+            <strong>U$D</strong>
+            <span>200,00*</span>
+          </p>
+          <p class="small">Impuestos y tasas <br />no incluídos</p>
+          <input type="text" value="Ver detalle" class="btn-send">
+          <p>
+            <a href="">Ver Bancos y Tarjetas</a>
+          </p>
+          <i class="fa fa-heart text-danger"></i>
+        </div>
+      </div>
+    </div>
+    <div class="activity-item">
+      <div class="activity-image">
+      </div>
+      <div class="activity-description">
+        <div class="activity-data">
+          <p>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span>|</span>
+            <span class="badge badge-success marca">8</span>
+            <span>|</span>
+            <span class="fa fa-map-marker text text-danger marca"></span>
+            &nbsp;
+            <span class="fa fa-wifi"></span>
+            &nbsp;
+            <span class="fa fa-snowflake"></span>
+          </p>
+          <h2 class="font-weight-bold">Bull Reina Isabell &amp; Spa</h2>
+          <p>Las Palmas de Gran Canaria<br />A 2,6 km del centro, cerca de la playa</p>
+          <p class="font-italic">El hotel de lujo Santa Catalina se encuentra en Las Palmas. Ofrece piscina al aire libre, centro de bienestar, piscina cubierta y habitaciones amplias con aire acondicionado, wifi gratuita y TV vía...</p>
+          <p class="text-danger font-italic">Última habitación disponible!</p>
+          <p class="text-success font-italic">No olvides contratar tu servicio de Asistencia al viajero!</p>
+        </div>
+        <div class="activity-price-wrapper">
+          <p>Precio por noche</p>
+          <p class="activity-price">
+            <strong>U$D</strong>
+            <span>200,00*</span>
+          </p>
+          <p class="small">Impuestos y tasas <br />no incluídos</p>
+          <input type="text" value="Ver detalle" class="btn-send">
+          <p>
+            <a href="">Ver Bancos y Tarjetas</a>
+          </p>
+          <i class="fa fa-heart"></i>
+        </div>
+      </div>
+    </div>
+    <div class="activity-pager-wrapper">
+      <div class="pager-number">1</div>
+      <div class="pager-number">2</div>
+      <div class="pager-number-active">3</div>
+      <div class="pager-number">4</div>
+      <div class="pager-number">5</div>
+    </div>
+  </div>
+</div>

@@ -6,7 +6,6 @@ header {
 }
 
 .large-header {
-    position: relative;
     /* height: 650px; */
     background: none;
     white-space: nowrap;
@@ -16,6 +15,7 @@ header {
     overflow: hidden;
 }
 .left-background {
+    position: relative;
     background-image: none;
     width: 100%;
     height: 0;
@@ -29,6 +29,7 @@ header {
     padding-top: 64.80%;
 }
 .right-background {
+    position: relative;
     background-image: none;
     width: 100%;
     height: 0;
@@ -49,6 +50,17 @@ header {
     display: inline-block;
     background-color: black;
 }
+
+.background-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+    height: auto;
+}
+
 /* FIN LARGE HEADER */
 /* ----------------------------- */
 /* ESTILOS SMALL HEADER */

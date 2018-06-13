@@ -1,0 +1,142 @@
+header {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    /* background-color: rgba(31, 41, 41); */
+}
+
+.large-header {
+    position: relative;
+    /* height: 650px; */
+    background: none;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    overflow: hidden;
+}
+.left-background {
+    background-image: none;
+    width: 100%;
+    height: 0;
+    max-width: 1003px;
+    display: inline-block;
+    border: none;
+    background-size: cover;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/img/home-left.png');
+    padding-top: 64.80%;
+}
+.right-background {
+    background-image: none;
+    width: 100%;
+    height: 0;
+    max-width: 490px;
+    display: inline-block;
+    border: none;
+    background-size: cover;
+    background-position: 75% center;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/img/home-right.png');
+    padding-top: 64.80%;
+}
+.vertical-white-bar {
+    background-image: none;
+    background-color: white;
+    width: 7px;
+    height: 100%;
+    display: inline-block;
+    background-color: black;
+}
+/* FIN LARGE HEADER */
+/* ----------------------------- */
+/* ESTILOS SMALL HEADER */
+.small-header {
+    position: relative;
+    /*Agregar altura*/
+    background: transparent;
+}
+/* FIN SMALL HEADER */
+.default-background {
+    background-image: none;
+}
+.background-overlay {
+    background-image: none;
+}
+
+/* ----------------------------- */
+
+/* MEDIA QUERIES */
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    /* ESTILOS LARGE HEADER */
+    .large-header {
+        position: relative;
+        height: 650px;
+        background: transparent;
+        white-space: nowrap;
+    }
+    .left-background {
+        background-image: none;
+        width: 100%;
+        height: 100%;
+        max-width: 1003px;
+        display: inline-block;
+        border: none;
+        background-size: cover;
+        background-position: 0px center;
+        background-repeat: no-repeat;
+        background-image: url('../../../assets/img/home-left.png');
+    }
+    .right-background {
+        background-image: none;
+        width: 100%;
+        height: 100%;
+        max-width: 490px;
+        display: inline-block;
+        border: none;
+        background-size: cover;
+        background-position: 75% center;
+        background-repeat: no-repeat;
+        background-image: url('../../../assets/img/home-right.png');
+    }
+    .vertical-white-bar {
+        background-image: none;
+        background-color: white;
+        width: 7px;
+        height: 100%;
+        display: inline-block;
+    }
+    /* FIN LARGE HEADER */
+    /* ----------------------------- */
+    /* ESTILOS SMALL HEADER */
+    .small-header {
+        position: relative;
+        /*Agregar altura*/
+        background: transparent;
+    }
+    /* FIN SMALL HEADER */
+    .default-background {
+        background-image: none;
+    }
+    .background-overlay {
+        background-image: none;
+    }
+}
+
+/* FIN MEDIA QUERIES */

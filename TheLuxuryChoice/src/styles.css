@@ -1,90 +1,97 @@
-/* You can add global styles to this file, and also import other style files */
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box;   
-}
 html {
     font-size: 10pt;
-  }
-
-body{
-    font-family: 'Open Sans', sans-serif!important;
-    margin: 0 auto;
 }
 
-button:focus {outline:0;}
-button{cursor: hand;}
+body {
+    font-family: 'Open Sans', sans-serif!important;
+}
 
-.block{display: block}
-.inline-block{display: inline-block;}
+/**/
+/*
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
 
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
 
-.title{
-	width: 100%;
-	text-align: center;
-	padding-bottom: 50px;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+/**/
+
+/********************************/
+
+/* 
+button:focus {
+    outline: 0;
+}
+
+button {
+    cursor: hand;
+}
+
+.block {
+    display: block
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
     line-height: 1;
     margin-bottom: 15px;
     margin-top: 50px;
-   
 }
 
-.title h5{
-  color: #4dcb0b;
-  line-height: 0;
-  font-size: 1em;
-  text-transform: uppercase;
+.title h5 {
+    color: #4dcb0b;
+    line-height: 0;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
-.rule::before{
+.rule::before {
     content: "";
     position: absolute;
     width: 6%;
     height: 50px;
     border-bottom: 3px solid #87bb43;
     left: 47%;
+}
 
-   }
+.underline {
+    border-bottom: 1px solid #d5d9dc;
+    content: "";
+}
 
-   .underline{
-       border-bottom: 1px solid  #d5d9dc;
-       content: "";
-   }
-
-
-   .btn-send{
+.btn-send {
     padding: 10px;
     background-color: #87bb43;
     border-radius: 5px;
-    color:#fff;
+    color: #fff;
     border: none;
     text-align: center;
     margin: 0 auto;
 }
-
-
-
-header{
-    width: 100%;
-    background-color: rgb(31, 41, 41);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url('/assets/img/header-interno-4.png'); 
-}
-
+*/
 /*******************************************
                   MEDIA
 ********************************************/
+/*
 @media only screen and (max-width: 768px) {
-    .rule::before{
+    .rule::before {
         content: "";
         position: absolute;
         width: 100px;
         height: 50px;
         border-bottom: 3px solid #87bb43;
         left: 37%;
-       }
-    
-    
-}
+    }
+} */

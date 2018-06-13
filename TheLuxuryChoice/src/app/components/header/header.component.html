@@ -2,22 +2,43 @@
 
   <div class="large-header" *ngIf="!isSmall">
     <a id="menu-toggle" href="#" class="toggle" (click)="menuToggle()">
-        <span class="fa fa-bars"></span>
+      <span class="fa fa-bars"></span>
     </a>
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
-        <a id="menu-close" href="#" class="pull-right toggle"  (click)="menuClose()">
+        <a id="menu-close" href="#" class="pull-right toggle" (click)="menuClose()">
           <i class="fa fa-times"></i>
         </a>
         <li>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="/about">About Us</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="/packages">Paquetes</a>
         </li>
+        <li>
+          <a href="/activities">Actividades</a>
+        </li>
+        <li>
+          <a href="/news">Novedades</a>
+        </li>
+        <!-- <li>
+            <a href="#">Pagos</a>
+        </li> -->
+        <li>
+          <a href="/contact">Contacto</a>
+        </li>
+        <li>
+          <div class="menu-vertical-line"></div>
+        </li>
+        <li class="phone">
+          <i class="fa fa-phone"></i>
+        </li>
+        <li class="phone-number">
+            <span>0800.1234.000</span>
+          </li>
       </ul>
     </div>
     <div class="left-background">

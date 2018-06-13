@@ -86,7 +86,7 @@ header {
     right: 0;
     width: 250px;
     background: #fff;
-    position: fixed;
+    position: absolute;
     height: 100%;
     overflow-y: auto;
     z-index: 1000;
@@ -109,6 +109,8 @@ header {
   .sidebar-nav li {
     line-height: 50px;
     text-indent: 20px;
+    text-align: center;
+    font-size: 11pt;
   }
 
   .sidebar-nav li a {
@@ -116,7 +118,7 @@ header {
     display: block;
     text-decoration: none;
   }
-
+  
   .sidebar-nav li a:hover {
     color: #000;
     background: rgba(255,255,255,0.2);
@@ -125,6 +127,19 @@ header {
 
   .sidebar-nav li a:active, .sidebar-nav li a:focus {
     text-decoration: none;
+  }
+
+  .sidebar-nav li.phone i{
+    transform: rotate(90deg);
+  }
+  
+  .sidebar-nav li.phone i:before {
+    margin: 0 9px 0 0;
+  }
+  
+  .sidebar-nav li.phone-number{
+      font-size: 16pt;
+      font-weight: 600;
   }
 
   .sidebar-nav > .sidebar-brand {
@@ -152,7 +167,7 @@ header {
     right: 0;
     position: absolute;
     z-index: 1;
-    margin: 78px 9.33% 0 0;
+    margin: 78px 141px 0 0;
   }
 
   #menu-close{
@@ -170,6 +185,11 @@ header {
     -o-transition: all 0.5s ease-out 0s;
   }
 
+  .menu-vertical-line{
+      width: 55%;
+      height: 26px;
+      border-right: 1px solid #888;
+  }
 
 /* FIN SIDE BAR */
 

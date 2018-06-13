@@ -1,7 +1,7 @@
 header {
     width: 100%;
     max-width: 1500px;
-    margin: 0px auto;
+    margin: 0px auto;   
     /* background-color: rgba(31, 41, 41); */
 }
 
@@ -14,6 +14,7 @@ header {
     height: auto;
     overflow: hidden;
 }
+
 .left-background {
     position: relative;
     background-image: none;
@@ -22,18 +23,18 @@ header {
     max-width: 1003px;
     display: inline-block;
     border: none;
-    background-size: cover;
-    background-position: 0px center;
     background-repeat: no-repeat;
     background-image: url('../../../assets/img/home-left.png');
     padding-top: 43.33%;
 }
+
 .right-background {
     position: relative;
     background-image: none;
     width: 100%;
     height: 0;
     max-width: 490px;
+    min-width: 245px;
     display: inline-block;
     border: none;
     background-size: cover;
@@ -42,6 +43,7 @@ header {
     background-image: url('../../../assets/img/home-right.png');
     padding-top: 43.33%;
 }
+
 .vertical-white-bar {
     background-image: none;
     background-color: white;
@@ -60,24 +62,182 @@ header {
     background: rgba(0, 0, 0, .3);
     height: auto;
 }
+
 /* FIN LARGE HEADER */
+
 /* ----------------------------- */
+
 /* ESTILOS SMALL HEADER */
+
 .small-header {
     position: relative;
     /*Agregar altura*/
     background: transparent;
 }
+
 /* FIN SMALL HEADER */
+
 .default-background {
     background-image: none;
 }
+
 .background-overlay {
     background-image: none;
 }
 
 /* ----------------------------- */
 
+/* LOGO | MENU BUSQUEDA | CONTROLES BUSQUEDA */
+
+.col-container {
+    position: absolute;
+    z-index: 1;
+    top: 41px;
+    left: 12.26%;
+}
+
+.col-container .logo {
+    width: 235px;
+    height: auto;
+}
+
+.col-container ul#search-menu {
+    padding: 0;
+    margin: 110px 0px 0 6px;
+}
+
+.col-container ul#search-menu li {
+    display: inline;
+    padding-right: 15px;
+    padding-top: 5px;
+    font-size: 12pt;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.col-container ul#search-menu li:hover {
+    border-top: solid 2px #fff;
+}
+
+.col-container ul#search-menu li a {
+    color: #fff;
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+.search-controls {
+    position: absolute;
+    z-index: 1;
+    margin-left: 184px;
+    margin-top: 288px;
+    width: 275px;
+    height: 50%;
+}
+
+.destiny, .fecha, .pax {
+    font-size: 10pt;
+    font-weight: normal;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 22px 0 0;
+    margin-top: 6px;
+}
+
+.destiny {
+    width: 272px;
+    display: block;
+    border-radius: 0;
+    border: none;
+}
+.fecha {
+    border: none;
+    border-radius: 0px;
+    display: inline-block;
+    width: 134px;
+}
+
+.fecha:first-of-type {
+    margin-right: 1%;
+    width: 49%;
+}
+
+.pax {
+    display: block;
+    width: 49%;
+    border: none;
+    border-radius: 0px;
+}
+
+.send {
+    display: block;
+    padding: 10px;
+    width: 174px;
+    background-color: #87bb43;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* FIN LOGO | MENU BUSQUEDA | CONTROLES BUSQUEDA */
+
+/* CONTACTO Y LOGIN */
+
+.contact {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin: 54px 184px 0 0;
+    text-align: right;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+.contact a, .contact span {
+    margin-left: 15px;
+    color: #fff;
+}
+
+.contact .social {
+    font-size: 11pt;
+}
+
+.contact .languaje {
+    font-size: 11pt;
+    background: transparent;
+    color: #fff;
+    border: none;
+    padding-right: 0px;
+    margin-left: 15px;
+}
+
+.contact ul#login-menu li {
+    color: #fff;
+    display: inline;
+}
+
+.contact ul#login-menu li a {
+    font-size: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contact .tel {
+    color: #fff;
+    font-size: 16pt;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+.contact .tel i {
+    font-size: 11pt;
+    margin: 0px -12px 0px 0px;
+    padding: 20px 0px 6px 8px;
+    transform: rotate(90deg);
+}
+
+/* FIN CONTACTO Y LOGIN */
 
 /* SIDE BAR */
 
@@ -86,7 +246,7 @@ header {
     right: 0;
     width: 250px;
     background: #fff;
-    position: absolute;
+    position: fixed;
     height: 100%;
     overflow-y: auto;
     z-index: 1000;
@@ -95,87 +255,87 @@ header {
     -moz-transition: all 0.5s ease-in 0s;
     -ms-transition: all 0.5s ease-in 0s;
     -o-transition: all 0.5s ease-in 0s;
-  }
+}
 
-  .sidebar-nav {
+.sidebar-nav {
     position: absolute;
     top: 0;
     width: 250px;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  .sidebar-nav li {
+.sidebar-nav li {
     line-height: 50px;
     text-indent: 20px;
     text-align: center;
     font-size: 11pt;
-  }
+}
 
-  .sidebar-nav li a {
+.sidebar-nav li a {
     color: #999999;
     display: block;
     text-decoration: none;
-  }
-  
-  .sidebar-nav li a:hover {
+}
+
+.sidebar-nav li a:hover {
     color: #000;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     text-decoration: none;
-  }
+}
 
-  .sidebar-nav li a:active, .sidebar-nav li a:focus {
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
     text-decoration: none;
-  }
+}
 
-  .sidebar-nav li.phone i{
+.sidebar-nav li.phone i {
     transform: rotate(90deg);
-  }
-  
-  .sidebar-nav li.phone i:before {
-    margin: 0 9px 0 0;
-  }
-  
-  .sidebar-nav li.phone-number{
-      font-size: 16pt;
-      font-weight: 600;
-  }
+}
 
-  .sidebar-nav > .sidebar-brand {
+.sidebar-nav li.phone i:before {
+    margin: 0 9px 0 0;
+}
+
+.sidebar-nav li.phone-number {
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.sidebar-nav>.sidebar-brand {
     height: 55px;
     line-height: 55px;
     font-size: 18px;
-  }
+}
 
-  .sidebar-nav > .sidebar-brand a {
+.sidebar-nav>.sidebar-brand a {
     color: #999999;
-  }
+}
 
-  .sidebar-nav > .sidebar-brand a:hover {
+.sidebar-nav>.sidebar-brand a:hover {
     color: #000;
     background: none;
-  }
+}
 
-  #menu-toggle, #menu-close {
+#menu-toggle, #menu-close {
     font-size: 25px;
     color: white;
-  }
-  
-  #menu-toggle {
+}
+
+#menu-toggle {
     top: 0;
     right: 0;
     position: absolute;
     z-index: 1;
-    margin: 78px 141px 0 0;
-  }
+    margin: 60px 141px 0 0;
+}
 
-  #menu-close{
+#menu-close {
     margin: 10px 0 0 10px;
     color: #888;
-  }
+}
 
-  #sidebar-wrapper.active {
+#sidebar-wrapper.active {
     right: 250px;
     width: 250px;
     transition: all 0.5s ease-out 0s;
@@ -183,13 +343,13 @@ header {
     -moz-transition: all 0.5s ease-out 0s;
     -ms-transition: all 0.5s ease-out 0s;
     -o-transition: all 0.5s ease-out 0s;
-  }
+}
 
-  .menu-vertical-line{
-      width: 55%;
-      height: 26px;
-      border-right: 1px solid #888;
-  }
+.menu-vertical-line {
+    width: 55%;
+    height: 26px;
+    border-right: 1px solid #888;
+}
 
 /* FIN SIDE BAR */
 
@@ -209,59 +369,6 @@ header {
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {
-    /* ESTILOS LARGE HEADER */
-    .large-header {
-        position: relative;
-        height: 650px;
-        background: transparent;
-        white-space: nowrap;
-    }
-    .left-background {
-        background-image: none;
-        width: 100%;
-        height: 100%;
-        max-width: 1003px;
-        display: inline-block;
-        border: none;
-        background-size: cover;
-        background-position: 0px center;
-        background-repeat: no-repeat;
-        background-image: url('../../../assets/img/home-left.png');
-    }
-    .right-background {
-        background-image: none;
-        width: 490px;
-        height: 100%;
-        display: inline-block;
-        border: none;
-        background-size: cover;
-        background-position: 75% center;
-        background-repeat: no-repeat;
-        background-image: url('../../../assets/img/home-right.png');
-    }
-    .vertical-white-bar {
-        background-image: none;
-        background-color: white;
-        width: 7px;
-        height: 100%;
-        display: inline-block;
-    }
-    /* FIN LARGE HEADER */
-    /* ----------------------------- */
-    /* ESTILOS SMALL HEADER */
-    .small-header {
-        position: relative;
-        /*Agregar altura*/
-        background: transparent;
-    }
-    /* FIN SMALL HEADER */
-    .default-background {
-        background-image: none;
-    }
-    .background-overlay {
-        background-image: none;
-    }
-}
+@media (min-width: 1200px) {}
 
 /* FIN MEDIA QUERIES */

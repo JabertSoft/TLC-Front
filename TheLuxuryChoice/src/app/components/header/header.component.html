@@ -1,6 +1,82 @@
 <header>
 
+  <!-- LARGE CONTENT HEADER -->
   <div class="large-header" *ngIf="!isSmall">
+    <!-- LEFT CONTENT HEADER -->
+    <div class="col-container">
+      <img src="../../assets/img/titulo.png" class="logo" alt="">
+
+      <ul id="search-menu">
+        <li>
+          <a href="/home">{{'header-sm.hotels' | translate}}</a>
+        </li>
+        <li>
+          <a href="/fligth">{{'header-sm.flights' | translate}}</a>
+        </li>
+        <li>
+          <a href="/packages">{{'header-sm.packages' | translate}}</a>
+        </li>
+        <li>
+          <a href="/activities">{{'header-sm.activities' | translate}}</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="search-controls">
+      <select class="destiny">
+        <option value="1">Gran Canaria</option>
+        <option value="2">Fuerte Ventura</option>
+        <option value="3">Lanzarote</option>
+        <option value="4">Tenerife</option>
+      </select>
+      <input type="date" class="fecha" placeholder="Ida" value=" ">
+      <input type="date" class="fecha" placeholder="Vuelta" value=" ">
+      <select class="pax">
+        <option value="1">1 pax</option>
+        <option value="2">2 pax</option>
+        <option value="3">3 pax</option>
+        <option value="4">4 pax</option>
+      </select>
+      <a class="send" href="/activity-results">{{'header-sm.search' | translate}}
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+    <!-- RIGHT CONTENT HEADER -->
+    <div class="contact">
+      <div class="social">
+        <a href="https://facebook.com">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://youtube.com">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://twitter.com">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <button (click)="changeLanguage('es')" class="languaje">ESP</button>
+        <span class="languaje">|</span>
+        <button (click)="changeLanguage('en')" class="languaje">ENG</button>
+      </div>
+      <div class="login">
+        <ul id="login-menu">
+          <li>
+            <a href="/signup">{{'header-sm.sign-up' | translate}}</a>
+          </li>
+          <li>
+            <span>|</span>
+          </li>
+          <li>
+            <a href="">{{'header-sm.sign-in' | translate}}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tel">
+        <i class="fa fa-phone"></i> 0800-111-2345
+      </div>
+    </div>
     <a id="menu-toggle" href="#" class="toggle" (click)="menuToggle()">
       <span class="fa fa-bars"></span>
     </a>
@@ -37,10 +113,12 @@
           <i class="fa fa-phone"></i>
         </li>
         <li class="phone-number">
-            <span>0800.1234.000</span>
-          </li>
+          <span>0800.1234.000</span>
+        </li>
       </ul>
     </div>
+
+    <!-- BACKGROUND HEADER -->
     <div class="left-background">
       <div class="background-overlay">
 
@@ -54,12 +132,15 @@
     </div>
 
   </div>
+  <!-- FIN LARGE CONTENT HEADER -->
 
+
+  <!-- SMALL CONTENT HEADER -->
   <div class="small-header" *ngIf="isSmall">
     <div class="default-background">
     </div>
   </div>
-
+  <!-- FIN SMALL CONTENT HEADER -->
 
   <!-- 
     <div style="display: flex; flex-direction: row; height: 50%;">

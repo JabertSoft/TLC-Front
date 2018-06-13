@@ -24,7 +24,7 @@ body {
 
 /********************************/
 
-/* 
+
 button:focus {
     outline: 0;
 }
@@ -80,11 +80,11 @@ button {
     text-align: center;
     margin: 0 auto;
 }
-*/
+
 /*******************************************
                   MEDIA
 ********************************************/
-/*
+
 @media only screen and (max-width: 768px) {
     .rule::before {
         content: "";
@@ -94,4 +94,4 @@ button {
         border-bottom: 3px solid #87bb43;
         left: 37%;
     }
-} */
+}

@@ -26,7 +26,7 @@ header {
     background-position: 0px center;
     background-repeat: no-repeat;
     background-image: url('../../../assets/img/home-left.png');
-    padding-top: 64.80%;
+    padding-top: 43.33%;
 }
 .right-background {
     position: relative;
@@ -40,7 +40,7 @@ header {
     background-position: 75% center;
     background-repeat: no-repeat;
     background-image: url('../../../assets/img/home-right.png');
-    padding-top: 64.80%;
+    padding-top: 43.33%;
 }
 .vertical-white-bar {
     background-image: none;
@@ -117,9 +117,8 @@ header {
     }
     .right-background {
         background-image: none;
-        width: 100%;
+        width: 490px;
         height: 100%;
-        max-width: 490px;
         display: inline-block;
         border: none;
         background-size: cover;
